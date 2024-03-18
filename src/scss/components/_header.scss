@@ -1,0 +1,93 @@
+// Imagen inicial ribbon
+.header-top__ribbon {
+    img {
+        min-width: 1900px;
+        width: 100%;
+    }
+}
+
+.nav-main {
+    position: relative;
+    z-index: 10; // Siempre visible de primero
+    margin-top: -3px;
+}
+
+.nav-container-main {
+    background-color: white;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    .nav-item {
+        &:hover {
+            background-color: var(--hover-nav-color);
+            a {
+                color: white;
+                font-weight: 600;
+            }
+        }
+        a {
+            color: var(--color-primary);
+            font-weight: 400;
+        }
+    }
+}
+
+.item-active {
+    background-color: var(--hover-nav-color);
+    color: white;
+    font-weight: 400;
+    a {
+        color: white!important;
+        font-weight: 600!important;
+    }
+}
+
+
+
+
+
+
+
+.nav-container-dropdown {
+    min-height: 4rem;
+    padding-top: 1rem;
+}
+.nav-list-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    .nav-item {
+        border-right: 1px solid white;
+        a {
+            color: white;
+            &:hover {
+                color: #00AEEF;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.nav-item a {
+    display: flex;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+}
+.container-back {
+    position: relative;
+    margin-top: -11rem;
+    z-index: 1;
+}
+// Container logo
+.container-logo {
+    z-index: 6;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+.container-logo img {
+    position: relative;
+    width: 220px;
+}
