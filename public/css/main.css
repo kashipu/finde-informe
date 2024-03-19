@@ -193,13 +193,6 @@ table {
   flex-wrap: wrap;
   position: relative;
 }
-.nav-list .nav-item:hover {
-  background-color: var(--hover-nav-color);
-}
-.nav-list .nav-item:hover a {
-  color: white;
-  font-weight: 600;
-}
 .nav-list .nav-item a {
   color: var(--color-primary);
   font-weight: 400;
@@ -216,12 +209,20 @@ table {
 }
 
 .nav-container-dropdown {
+  border: 1px solid red;
   min-height: 4rem;
   padding-top: 1rem;
   position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.d-none {
+  display: none;
 }
 
 .nav-list-dropdown {
+  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
 }
@@ -230,10 +231,6 @@ table {
 }
 .nav-list-dropdown .nav-item a {
   color: black;
-}
-.nav-list-dropdown .nav-item a:hover {
-  color: #00AEEF;
-  font-weight: 700;
 }
 
 .nav-item a {

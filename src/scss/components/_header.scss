@@ -21,13 +21,6 @@
     flex-wrap: wrap;
     position: relative;
     .nav-item {
-        &:hover {
-            background-color: var(--hover-nav-color);
-            a {
-                color: white;
-                font-weight: 600;
-            }
-        }
         a {
             color: var(--color-primary);
             font-weight: 400;
@@ -46,21 +39,24 @@
 }
 
 .nav-container-dropdown {
+    border: 1px solid red;
     min-height: 4rem;
     padding-top: 1rem;
     position: absolute;
+    left: 0;
+    width: 100%;
+}
+.d-none {
+    display: none;
 }
 .nav-list-dropdown {
+    border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
     .nav-item {
         border-right: 1px solid black;
         a {
             color: black;
-            &:hover {
-                color: #00AEEF;
-                font-weight: 700;
-            }
         }
     }
 }
