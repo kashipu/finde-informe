@@ -1,0 +1,28 @@
+.card-uno {
+    background-color: #D5DDEB;
+    width: 290px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    &:hover {
+        background-color: #2D549D;
+        .card-title p {
+            color: white;
+        }
+    }
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #2566af;
+    }
+}

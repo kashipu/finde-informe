@@ -45,23 +45,18 @@
     }
 }
 
-
-
-
-
-
-
 .nav-container-dropdown {
     min-height: 4rem;
     padding-top: 1rem;
+    position: absolute;
 }
 .nav-list-dropdown {
     display: flex;
     flex-wrap: wrap;
     .nav-item {
-        border-right: 1px solid white;
+        border-right: 1px solid black;
         a {
-            color: white;
+            color: black;
             &:hover {
                 color: #00AEEF;
                 font-weight: 700;

@@ -1,0 +1,46 @@
+.card-tres {
+    width: 290px;
+    height: 338px;
+    position: relative;
+}
+.card-tres-image {
+    position: relative;
+    z-index: 1;
+    width: 290px;
+    img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 3/3.5;
+    }
+}
+.card-tres-overlay {
+    top: 0;
+    background-color: rgba(0, 255, 255, 0.173);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.card-tres-content {
+    padding: 1.2rem;
+    align-items: center;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    z-index: 3;
+    .card-tres-title {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+        align-self: end;
+    }
+    .card-tres-text {
+        font-size: 1.2rem;
+        align-self: start;
+    }
+}

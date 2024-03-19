@@ -1,0 +1,47 @@
+.page-title {
+    margin-top: 3rem;
+    padding: 0rem 10%;
+    h1 {
+        font-size: 3.75rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--color-primary);
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        text-align: center;
+        color: #2d549d;
+    }
+}
+
+.page-cards-section {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+// Cifras
+.page-cifras-section {
+    display: flex;
+    justify-content: center;
+}
+.cifras-container {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.page-cards-icons {
+
+}
+.cards-dos-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
