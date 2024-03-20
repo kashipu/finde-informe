@@ -2,7 +2,14 @@
 @import "./global";
 @import "./variables";
 @import "./page";
-@import "./home-page";
+
+
+@import "./pages/home-page";
+@import "./pages/hechos-destacados";
+@import "./pages/estrategia-corporativa";
+@import "./pages/calificaciones-page";
+@import "./pages/directivos-page";
+
 
 @import "./components/_header";
 @import "./components/_video-banner";
@@ -10,6 +17,13 @@
 @import "./components/_card-uno";
 @import "./components/_card-dos";
 @import "./components/_card-tres";
+@import "./components/_card-cuatro";
+@import "./components/_card-cinco";
+@import "./components/_card-seis";
 @import "./components/_footer";
 @import "./components/_cifras";
 @import "./components/_header-home";
+@import "./components/_section-impacto";
+@import "./components/_section-proposito-superior";
+@import "./components/_calificaciones-banner";
+@import "./components/_directivos-avatar";

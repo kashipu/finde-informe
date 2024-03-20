@@ -1,0 +1,14 @@
+.calificaciones-banner-container {
+    border: 1px solid red;
+}
+.calificaciones-banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    margin-bottom: 5rem;
+}
+.section-banner {
+    border: 1px solid red;
+    img {
+        width: 100%;
+    }
+}

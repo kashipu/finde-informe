@@ -1,4 +1,43 @@
 extends ../layouts/base.pug
+include ../components/card-tres.pug
+include ../components/card-cuatro.pug
 block content
+    include ../components/header-home.pug
+    .download-container
+        a(href="")
+            .download-button
+                .icon-download
+                    img(src="./images/download-icon.svg", alt="", srcset="")
+                .text-download
+                    p Descargar informe completo
+    .welcome-banner
+        .welcome-title.wrapper
+            h1(class="section-title") Bienvenidos al informe
+        include ../components/video-banner.pug
+    .section-destacados
+        .title
+            h2.section-title Hechos destacados
+        .cards-container.wrapper
+            +card-tres
+            +card-tres
+    .section-gestion
+        .title
+            h2.section-title Nuestra gestión
+        .cards-container
+            +card-cuatro
+            +card-cuatro
+            +card-cuatro
+            +card-cuatro
+            +card-cuatro
+            +card-cuatro
+    .section-desarrollo
+        .title
+            h2.section-title Desarrollo sostenible
+        .cards-container
+            +card-tres
+            +card-tres
+            +card-tres
+    .section-impacto
+        include ../components/section-impacto.pug
+
     include ../components/video-banner.pug
-    include ../components/file-banner.pug

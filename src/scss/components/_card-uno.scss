@@ -1,6 +1,6 @@
 .card-uno {
     background-color: #D5DDEB;
-    width: 290px;
+    width: 320px;
     height: 290px;
     display: flex;
     justify-content: center;
@@ -14,6 +14,10 @@
     }
 }
 
+.card-uno-box {
+    padding: 2rem;
+}
+
 .card-title {
     display: flex;
     flex-direction: column;
@@ -24,5 +28,6 @@
         font-size: 1.5rem;
         font-weight: 500;
         color: #2566af;
+        text-align: center;
     }
 }

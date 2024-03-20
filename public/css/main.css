@@ -70,6 +70,7 @@ table {
 
 :root {
   --color-primary: #112d6a;
+  --color-secondary: #2d549d;
   --background-color-page: #ECF3FA;
   --hover-nav-color: #2d549d;
   --text-nav-color: #112d6a;
@@ -163,13 +164,147 @@ table {
 }
 
 .section-destacados {
-  margin-top: 5rem;
+  margin: 5rem 0rem;
+}
+.section-destacados .title {
+  margin-bottom: 5rem;
 }
 .section-destacados .cards-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.section-gestion {
+  margin: 5rem 0rem;
+}
+.section-gestion .title {
+  margin-bottom: 5rem;
+}
+.section-gestion .cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-desarrollo .title {
+  margin-bottom: 5rem;
+}
+.section-desarrollo .cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.section-reconocimientos {
+  margin-top: 5rem;
+}
+
+.reconocimiento-cards {
+  margin-top: 5rem;
+}
+
+.reconocimiento-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.estrategia-corporativa-container {
+  border: 1px solid red;
+}
+
+.estrategia-box {
+  margin-top: 5rem;
+}
+
+.estrategia-title {
+  margin-bottom: 5rem;
+}
+
+.estrategia-text {
+  margin: 0 auto;
+  max-width: 46vw;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.3;
+}
+.estrategia-text p {
+  margin-bottom: 2rem;
+}
+
+.section-calificaciones-cards {
+  margin-top: 5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.section-calificaciones-box {
+  margin-top: 5rem;
+}
+
+.section-calificaciones-texto {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.section-calificaciones-texto .texto-box {
+  max-width: 40vw;
+}
+.section-calificaciones-texto .texto-box h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-calificaciones-texto .texto-box p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.directivos-title {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.directivos-title h1 {
+  color: var(--color-primary);
+}
+
+.directivos-subtitle {
+  margin-bottom: 2rem;
+}
+.directivos-subtitle h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.directivos-text {
+  margin: 0 auto;
+  max-width: 50vw;
+}
+.directivos-text p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.directivos-banner-title {
+  padding: 1rem;
+  background-color: #00acec;
+}
+
+.directivos-banner-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #2566af;
+  padding: 1rem;
+  margin-bottom: 3rem;
 }
 
 .header-top__ribbon img {
@@ -327,7 +462,7 @@ table {
 
 .card-uno {
   background-color: #D5DDEB;
-  width: 290px;
+  width: 320px;
   height: 290px;
   display: flex;
   justify-content: center;
@@ -341,6 +476,10 @@ table {
   color: white;
 }
 
+.card-uno-box {
+  padding: 2rem;
+}
+
 .card-title {
   display: flex;
   flex-direction: column;
@@ -352,6 +491,7 @@ table {
   font-size: 1.5rem;
   font-weight: 500;
   color: #2566af;
+  text-align: center;
 }
 
 .card-dos {
@@ -406,6 +546,81 @@ table {
 .card-tres-content .card-tres-text {
   font-size: 1.2rem;
   align-self: start;
+}
+
+.card-cuatro {
+  position: relative;
+  border: 1px solid green;
+  min-width: 320px;
+}
+
+.card-cuatro-image {
+  position: relative;
+  z-index: 1;
+}
+.card-cuatro-image img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 5/3.5;
+}
+
+.card-cuatro-overlay {
+  top: 0;
+  background-color: rgba(0, 255, 255, 0.173);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.card-cuatro-content {
+  padding: 1.2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+.card-cuatro-content .card-cuatro-icon {
+  border: 1px solid red;
+}
+.card-cuatro-content .card-cuatro-title {
+  border: 1px solid red;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.card-cuatro-content .card-cuatro-text {
+  border: 1px solid red;
+  font-size: 1.2rem;
+}
+
+.card-cinco-container {
+  border: 1px solid red;
+  padding: 1rem;
+}
+
+.card-cinco-box {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+.card-cinco-title {
+  font-size: 1.5rem;
+}
+
+.card-cinco-buttons {
+  border: 1px solid red;
+}
+
+.card-seis-container {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: aqua;
+  text-align: center;
 }
 
 footer {
@@ -511,4 +726,70 @@ header {
 .header-text p {
   font-weight: 700;
   color: white;
+}
+
+.section-impacto-container {
+  margin-top: 5rem;
+  border: 1px solid red;
+}
+
+.section-impacto-box {
+  border: 1px solid red;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-impacto-buttons {
+  border: 1px solid red;
+  margin-top: 5rem;
+}
+
+.impacto-buttons-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.calificaciones-banner-container {
+  border: 1px solid red;
+}
+
+.calificaciones-banner-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
+  margin-bottom: 5rem;
+}
+
+.section-banner {
+  border: 1px solid red;
+}
+.section-banner img {
+  width: 100%;
+}
+
+.directivo-item {
+  padding: 1.2rem;
+  font-size: 1.125rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.directivo-avatar {
+  margin-bottom: 1rem;
+}
+.directivo-avatar img {
+  border-radius: 50px;
+  width: 80px;
+}
+
+.directivo-nombre {
+  color: #b7d831;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.directivo-cargo p {
+  color: white;
+  font-size: 1.125rem;
 }

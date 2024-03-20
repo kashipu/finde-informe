@@ -1,0 +1,19 @@
+.section-impacto-container {
+    margin-top: 5rem;
+    border: 1px solid red;
+}
+.section-impacto-box {
+    border: 1px solid red;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section-impacto-buttons {
+    border: 1px solid red;
+    margin-top: 5rem;
+}
+.impacto-buttons-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}

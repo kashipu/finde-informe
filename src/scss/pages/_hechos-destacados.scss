@@ -1,0 +1,11 @@
+.section-reconocimientos {
+    margin-top: 5rem;
+}
+.reconocimiento-cards {
+    margin-top: 5rem;
+}
+.reconocimiento-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}

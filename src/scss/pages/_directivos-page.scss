@@ -1,0 +1,43 @@
+.directivos-container {
+}
+.directivos-box {
+}
+.directivos-title {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    h1 {
+        color: var(--color-primary);
+    }
+}
+.directivos-subtitle {
+    margin-bottom: 2rem;
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 500;
+        text-align: center;
+        color: var(--color-secondary);
+    }
+}
+.directivos-text {
+    margin: 0 auto;
+    max-width: 50vw;
+    p {
+        font-size: 1.125rem;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+}
+.directivos-banner {
+}
+.directivos-banner-title {
+    padding: 1rem;
+    background-color: #00acec;
+}
+.directivos-banner-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #2566af;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}

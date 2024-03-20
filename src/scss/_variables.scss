@@ -1,5 +1,5 @@
 $color-primary: #112d6a;
-
+$color-secondary: #2d549d;
 $background-color-page: #ECF3FA;
 //Header
 $hover-nav-color: #2d549d;
@@ -7,6 +7,7 @@ $text-nav-color: #112d6a;
 
 :root {
     --color-primary: #{$color-primary};
+    --color-secondary: #{$color-secondary};
     --background-color-page: #{$background-color-page};
     --hover-nav-color: #{$hover-nav-color};
     --text-nav-color: #{$text-nav-color};

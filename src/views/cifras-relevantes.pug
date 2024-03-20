@@ -1,0 +1,32 @@
+extends ../layouts/base.pug
+include ../components/card-uno.pug
+include ../components/card-dos.pug
+include ../components/cifras.pug
+block content
+    .page-title.wrapper
+        h1 Cifras relevantes
+        p Hemos tenido un impacto significativo en el bienestar y el desarrollo sostenible del país, lo cual se refleja en nuestros logros destacados, resultado del compromiso con el fortalecimiento territorial y la inclusión financiera, por medio de soluciones.
+    .page-cards-section.wrapper
+        +card-uno('Financiación')
+        +card-uno('Asistencia técnica')
+        +card-uno('Planificación')
+    .page-cifras-section.wrapper
+        .cifras-container
+            +cifras('$3,89 billones', 'Desembolsos totales')
+            +cifras('$2,42 billones ', 'Por redescuento')
+            +cifras('$1,47 billones', 'Por crédito directo')
+            +cifras('670', 'Proyectos')
+            +cifras('411', 'Municipios impactados')
+            +cifras('90%', 'Categorías  3, 4, 5 y 6')
+    .page-cards-icons.wrapper
+        .cards-dos-container
+            +card-dos
+            +card-dos
+            +card-dos
+            +card-dos
+            +card-dos
+            +card-dos
+            +card-dos
+            +card-dos
+            +card-dos
+            +card-dos

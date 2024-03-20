@@ -1,0 +1,30 @@
+.section-calificaciones-cards {
+    margin-top: 5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.section-calificaciones-box {
+    margin-top: 5rem;
+}
+.section-calificaciones-texto {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    .texto-box {
+        max-width: 40vw;
+        h2 {
+            font-weight: 500;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-weight: 300;
+            font-size: 1.2rem;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+
+        }
+    }
+}
