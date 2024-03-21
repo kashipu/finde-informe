@@ -62,6 +62,11 @@ table {
   margin: 0 auto;
 }
 
+.wrapper-intern {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
 .section-title {
   text-align: center;
   font-size: 3.75rem;
@@ -71,6 +76,7 @@ table {
 :root {
   --color-primary: #112d6a;
   --color-secondary: #2d549d;
+  --white: #FFFFFF;
   --background-color-page: #ECF3FA;
   --hover-nav-color: #2d549d;
   --text-nav-color: #112d6a;
@@ -305,6 +311,175 @@ table {
   background-color: #2566af;
   padding: 1rem;
   margin-bottom: 3rem;
+}
+
+.talento-image img {
+  width: 100%;
+}
+
+.talento-box {
+  position: relative;
+  top: -100px;
+  background-color: #D9F3FC;
+  padding: 4rem;
+  max-width: 960px;
+}
+
+.talento-title h1 {
+  text-align: center;
+  color: #112d6a;
+  font-size: 3.75rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.talento-text {
+  line-height: 1.5;
+  font-size: 18px;
+}
+.talento-text p {
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.innovacion-container {
+  margin-top: 5rem;
+}
+
+.innovacion-box {
+  padding: 2rem;
+}
+
+.innovacion-title h1 {
+  font-size: 3.75rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
+
+.innovacion-text {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.innovacion-text p {
+  line-height: 1.2;
+  font-size: 1.5rem;
+  color: #2d549d;
+}
+
+.innovacion-section1 {
+  padding: 3rem;
+  background-color: #1e6f41;
+}
+.innovacion-section1 .section1-text {
+  margin: 0 auto;
+  max-width: 50vw;
+  text-align: center;
+}
+.innovacion-section1 .section1-text p {
+  font-size: 1.375rem;
+  line-height: 1.2;
+  color: white;
+}
+
+.innovacion-section2 {
+  background-color: #43a756;
+  display: flex;
+  justify-content: center;
+}
+
+.section2-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 50vw;
+  padding: 2rem;
+}
+
+.section2-item {
+  border-left: 2px solid #b7d831;
+}
+.section2-item p {
+  padding: 1.125rem;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.innovacion-section3 {
+  background-image: radial-gradient(60% 40% at top, #43a756 100%, #43a756 100%, transparent 100%);
+}
+.innovacion-section3 .section3-box {
+  display: flex;
+  justify-content: center;
+}
+
+.innovacion-section4 {
+  margin-top: 5rem;
+}
+
+.section4-title {
+  max-width: 40vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.section4-title p {
+  font-size: 1.375rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.section4-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.sostenibilidad-container {
+  margin-top: 5rem;
+}
+
+.sostenibilidad-title h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sostenibilidad-text {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 3rem;
+}
+
+.responsabilidad-container {
+  margin-top: 5rem;
+}
+
+.responsabilidad-title h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.responsabilidad-text {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 3rem;
+}
+.responsabilidad-text p {
+  margin-bottom: 2rem;
 }
 
 .header-top__ribbon img {

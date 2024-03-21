@@ -1,0 +1,29 @@
+.talento-image {
+    img {
+        width: 100%;
+    }
+}
+.talento-box {
+    position: relative;
+    top: -100px;
+    background-color: #D9F3FC;
+    padding: 4rem;
+    max-width: 960px;
+}
+.talento-title {
+    h1 {
+        text-align: center;
+        color: #112d6a;
+        font-size: 3.75rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+    }
+}
+.talento-text {
+    line-height: 1.5;
+    font-size: 18px;
+    p {
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+}

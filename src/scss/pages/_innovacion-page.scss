@@ -1,0 +1,87 @@
+.innovacion-container {
+    margin-top: 5rem;
+}
+.innovacion-box {
+    padding: 2rem;
+}
+.innovacion-title {
+    h1 {
+        font-size: 3.75rem;
+        text-align: center;
+        font-weight: 700;
+        color: var(--color-primary);
+        margin-bottom: 3rem;
+    }
+}
+.innovacion-text {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 3rem;
+    p {
+        line-height: 1.2;
+        font-size: 1.5rem;
+        color: #2d549d;
+    }
+}
+.innovacion-section1 {
+    padding: 3rem;
+    background-color: #1e6f41;
+    .section1-text {
+        margin: 0 auto;
+        max-width: 50vw;
+        text-align: center;
+        p {
+            font-size: 1.375rem;
+            line-height: 1.2;
+            color: white;
+        }
+    }
+}
+.innovacion-section2 {
+    background-color: #43a756;
+    display: flex;
+    justify-content: center;
+}
+.section2-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 50vw;
+    padding: 2rem;
+}
+.section2-item {
+    border-left: 2px solid #b7d831;
+    p {
+        padding: 1.125rem;
+        line-height: 1.5;
+        color: var(--white);
+    }
+}
+.innovacion-section3 {
+    background-image:radial-gradient(60% 40% at top,#43a756 100%,#43a756 100%, transparent 100%);
+    .section3-box {
+        display: flex;
+        justify-content: center;
+    }
+}
+.innovacion-section4 {
+    margin-top: 5rem;
+}
+.section4-title {
+    max-width: 40vw;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    p {
+        font-size: 1.375rem;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+.section4-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
