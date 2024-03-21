@@ -1,6 +1,8 @@
-section.video-banner-container
-    .video-banner
-        .video-text
-            p Principales logros de la gestión de Findeter, Juan Carlos Muñiz Pacheco, presidente de la entidad.
-        .video-embed
-            img(src="http://placehold.co/862x370", alt="")
+mixin video-banner(text, idvideo, textbtn, linkbtn)
+    section.video-banner-container
+        .video-banner
+            .video-text
+                p=text
+                a(href=linkbtn)=textbtn
+            .video-embed
+                lite-youtube(videoid!=idvideo)

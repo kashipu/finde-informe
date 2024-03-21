@@ -1,6 +1,7 @@
 extends ../layouts/base.pug
 include ../components/card-tres.pug
 include ../components/card-cuatro.pug
+include ../components/video-banner.pug
 block content
     include ../components/header-home.pug
     .download-container
@@ -12,8 +13,8 @@ block content
                     p Descargar informe completo
     .welcome-banner
         .welcome-title.wrapper
-            h1(class="section-title") Bienvenidos al informe
-        include ../components/video-banner.pug
+            h1 Bienvenidos al informe
+        +video-banner('2023 ha sido un año de resultados históricos para Findeter. Nuestro presidente, Juan Carlos Muñiz Pacheco, habla de los principales logros de esta gestión.', 'Iop82MAdQcY', 'Ver más', '#')
     .section-destacados
         .title
             h2.section-title Hechos destacados

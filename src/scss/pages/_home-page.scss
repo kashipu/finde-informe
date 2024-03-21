@@ -34,7 +34,11 @@
     margin-top: 10rem;
 }
 .welcome-title {
-    text-align: center;
+    h1 {
+        text-align: center;
+        font-size: 3.75rem;
+        font-weight: 700;
+    }
 }
 .section-destacados {
     margin: 5rem 0rem;
@@ -66,5 +70,41 @@
         display: flex;
         justify-content: center;
         gap: 2rem;
+    }
+}
+
+@media(min-width: 1201px) {}
+@media(max-width: 1200px) {}
+@media(max-width: 500px) {
+    .download-container {
+        margin-top: 2rem;
+    }
+    .download-button {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: .5rem;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .icon-download {
+        img {
+            width: 50px;
+        }
+    }
+    .text-download {
+        right: 0px;
+        p {
+            font-size: 1rem;
+        }
+    }
+    .welcome-banner {
+        margin-top: 4rem;
+    }
+    .welcome-title {
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+        }
     }
 }

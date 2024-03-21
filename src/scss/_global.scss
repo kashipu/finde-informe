@@ -13,10 +13,11 @@
     font-size: 3.75rem;
     font-weight: 700;
 }
-.section-destacados .cards-container {
-
-}
 
 .home-icon {
     fill: var(--color-primary);
 }
+
+@media(min-width: 1201px) {}
+@media(max-width: 1200px) {}
+@media(max-width: 500px) {}
