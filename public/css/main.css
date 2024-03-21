@@ -99,6 +99,10 @@ table {
   background-color: rgba(183, 216, 49, 0.8470588235);
 }
 
+.color1 {
+  color: var(--color-primary);
+}
+
 .page-title {
   margin-top: 3rem;
   padding: 0rem 10%;
@@ -179,7 +183,7 @@ table {
 }
 
 .welcome-banner {
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 
 .welcome-title h1 {
@@ -826,15 +830,18 @@ table {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 3/3.5;
+  border-radius: 1rem;
 }
 
 .card-tres-overlay {
   top: 0;
-  background-color: rgba(0, 255, 255, 0.173);
+  background: rgb(17, 45, 106);
+  background: linear-gradient(0deg, rgb(17, 45, 106) 0%, rgb(17, 45, 106) 35%, rgba(10, 56, 153, 0.5) 100%);
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 2;
+  border-radius: 1rem;
 }
 
 .card-tres-content {
@@ -842,7 +849,7 @@ table {
   align-items: center;
   color: white;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   height: 100%;
   justify-content: center;
   position: absolute;
@@ -852,12 +859,13 @@ table {
 }
 .card-tres-content .card-tres-title {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
   align-self: end;
 }
 .card-tres-content .card-tres-text {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.2;
   align-self: start;
 }
 
@@ -915,7 +923,7 @@ table {
 
 @media (max-width: 500px) {
   .card-cuatro-content {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     justify-content: center;
   }
   .card-cuatro-image img {
