@@ -1,0 +1,8 @@
+.header-top__ribbon {
+  height: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+.header-top__ribbon img {
+  object-fit: contain;
+}

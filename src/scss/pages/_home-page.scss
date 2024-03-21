@@ -59,7 +59,7 @@
     }
     .cards-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(476px, 1fr));
     }
 }
 .section-desarrollo {
@@ -105,6 +105,11 @@
             text-align: center;
             font-size: 2rem;
             font-weight: 700;
+        }
+    }
+    .section-gestion {
+        .cards-container {
+            grid-template-columns: 1fr;
         }
     }
 }

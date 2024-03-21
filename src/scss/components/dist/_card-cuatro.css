@@ -1,0 +1,65 @@
+.card-cuatro {
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+}
+
+.card-cuatro-image {
+  position: relative;
+  z-index: 1;
+}
+.card-cuatro-image img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 5/3;
+  display: flex;
+}
+
+.card-cuatro-overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.card-cuatro-content {
+  padding: 3rem 5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+}
+.card-cuatro-content .card-cuatro-icon {
+  padding: 1rem;
+}
+.card-cuatro-content .card-cuatro-icon img {
+  width: 60px;
+}
+.card-cuatro-content .card-cuatro-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.card-cuatro-content .card-cuatro-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+  .card-cuatro-content {
+    padding: 1rem 1rem;
+    justify-content: center;
+  }
+
+  .card-cuatro-image img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 5/4;
+    display: flex;
+  }
+}
