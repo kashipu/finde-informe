@@ -3,9 +3,18 @@ header
         img(src="./images/senefatopok.png" aria-hidden="true")
     include ./navigation.pug
     .header-image
-        img(src="./images/header-desktop.png", alt="")
+        picture
+            source(media="(min-width:1200px)", srcset="./images/header-desktop.png")
+            source(media="(min-width:500px)", srcset="./images/header-tablet.png")
+            img(src="./images/header-mobile.png", alt="", srcset="")
         .header-home
                 .header-logo
                     img(src="./images/logofindeter.svg", alt="", srcset="")
                 .header-text
-                    p Informe de Gestión y Sostenibilidad 2023
+                    p
+                        span.sc1 Informe de Gestión
+                        |
+                        br
+                        |
+                        span.sc2 y sostenibilidad
+                        span.sc3  2023
