@@ -864,7 +864,7 @@ table {
 .card-tres-image {
   position: relative;
   z-index: 1;
-  width: 290px;
+  width: 100%;
 }
 .card-tres-image img {
   width: 100%;

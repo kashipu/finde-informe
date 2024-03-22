@@ -11,7 +11,7 @@
 .card-tres-image {
     position: relative;
     z-index: 1;
-    width: 290px;
+    width: 100%;
     img {
         width: 100%;
         object-fit: cover;
@@ -52,4 +52,7 @@
         line-height: 1.2;
         align-self: start;
     }
+}
+@media(max-width: 500px) {
+
 }
