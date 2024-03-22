@@ -1,10 +1,11 @@
 mixin card-tres(image, title, desc)
-    .card-tres
-        .card-tres-image
-            img(src=image, alt="", srcset="")
-        .card-tres-overlay
-        .card-tres-content
-            .card-tres-title
-                p=title
-            .card-tres-text
-                p=desc
+    .card-tres-container
+        .card-tres
+            .card-tres-image
+                img(src=image, alt="", srcset="")
+            .card-tres-overlay
+            .card-tres-content
+                .card-tres-title
+                    p=title
+                .card-tres-text
+                    p=desc

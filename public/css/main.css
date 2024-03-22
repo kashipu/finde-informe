@@ -202,7 +202,6 @@ table {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .section-gestion {
@@ -216,13 +215,42 @@ table {
   grid-template-columns: repeat(auto-fill, minmax(476px, 1fr));
 }
 
+.section-desarrollo {
+  position: relative;
+  margin-top: 12rem;
+}
 .section-desarrollo .title {
-  margin-bottom: 5rem;
+  position: relative;
+  z-index: 20;
+}
+.section-desarrollo .title h2 {
+  color: white;
 }
 .section-desarrollo .cards-container {
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.cards-container-box {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.cards-container-overlay {
+  position: absolute;
+  top: -6rem;
+  height: 30rem;
+  width: 100%;
+  background-image: radial-gradient(80% 100% at bottom, #4087C7 100%, #4087C7 100%, transparent 100%);
+}
+
+.cards-container-slick {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
 }
 
 @media (max-width: 500px) {
@@ -255,6 +283,12 @@ table {
   }
   .section-gestion .cards-container {
     grid-template-columns: 1fr;
+  }
+  .cards-container-overlay {
+    background-image: radial-gradient(160% 100% at bottom, #4087C7 100%, #4087C7 100%, transparent 100%);
+  }
+  .cards-container-box {
+    padding: 2rem;
   }
 }
 .section-reconocimientos {
@@ -653,17 +687,17 @@ table {
 }
 
 @media (min-width: 1201px) {
-  body {
-    background-color: lightgreen;
-  }
+  /*   body {
+        background-color: lightgreen;
+    } */
   .nav-burguer {
     display: none;
   }
 }
 @media (max-width: 1200px) {
-  body {
-    background-color: blue;
-  }
+  /*  body {
+       background-color: blue;
+   } */
   .nav-list {
     flex-direction: column;
   }
@@ -687,9 +721,9 @@ table {
   }
 }
 @media (max-width: 500px) {
-  body {
-    background-color: red;
-  }
+  /* body {
+      background-color: red;
+  } */
 }
 .video-banner-container {
   display: flex;
@@ -813,6 +847,12 @@ table {
 
 .card-dos {
   border: 1px solid red;
+}
+
+.card-tres-container {
+  padding: 1rem;
+  display: flex !important;
+  justify-content: center;
 }
 
 .card-tres {

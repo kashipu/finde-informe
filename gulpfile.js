@@ -19,6 +19,13 @@ gulp.task('styles', () => {
   //{outputStyle: 'compressed'}
 })
 
+gulp.task('slick', () => {
+  return gulp.src('./src/scss/slick/*.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('./public/css/slick'))
+  //{outputStyle: 'compressed'}
+})
+
 gulp.task('imageop', () => {
   return gulp.src('./src/images/*')
   .pipe(imagemin())
@@ -28,5 +35,6 @@ gulp.task('imageop', () => {
 gulp.task('default', () => {
   gulp.watch('./src/views/**/*.pug', gulp.series('views'))
   gulp.watch('./src/scss/**/*.scss', gulp.series('styles'))
+  gulp.watch('./src/scss/slick/*.scss', gulp.series('slick'))
   gulp.watch('./src/images/**/*', gulp.series('imageop'))
 })
