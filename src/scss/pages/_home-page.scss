@@ -99,7 +99,11 @@
 
 
 @media(min-width: 1201px) {}
-@media(max-width: 1200px) {}
+@media(max-width: 1200px) {
+    .cards-container-overlay {
+        background-image:radial-gradient(120% 100% at bottom,#4087C7 100%,#4087C7 100%, transparent 100%);
+    }
+}
 @media(max-width: 500px) {
     .download-container {
         margin-top: 2rem;

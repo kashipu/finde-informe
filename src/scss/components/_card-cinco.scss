@@ -1,18 +1,40 @@
 .card-cinco-container {
-    border: 1px solid red;
     padding: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 50px;
 }
 .card-cinco-box {
-    max-width: 150px;
     width: 100%;
     height: auto;
+    text-align: center;
 }
 .card-cinco-icon {
-
+    margin-bottom: 1rem;
+    img {
+        width: 100px;
+    }
 }
 .card-cinco-title {
     font-size: 1.5rem;
+    color: #2d549d;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.2;
 }
 .card-cinco-buttons {
-    border: 1px solid red;
+    align-self: end;
+    justify-self: center;
+    a  {
+        min-width: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #4087c7;
+        padding: 1rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: white;
+        border-radius: 2rem;
+        text-align: center;
+    }
 }

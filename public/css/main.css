@@ -253,6 +253,11 @@ table {
   gap: 1rem;
 }
 
+@media (max-width: 1200px) {
+  .cards-container-overlay {
+    background-image: radial-gradient(120% 100% at bottom, #4087C7 100%, #4087C7 100%, transparent 100%);
+  }
+}
 @media (max-width: 500px) {
   .download-container {
     margin-top: 2rem;
@@ -571,6 +576,13 @@ table {
   margin-bottom: 2rem;
 }
 
+.header-top__ribbon {
+  background-image: url("/public/images/senefatopok.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 20px;
+}
 .header-top__ribbon img {
   min-width: 1900px;
   width: 100%;
@@ -735,7 +747,7 @@ table {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   width: 100%;
-  margin-left: 10%;
+  margin-left: 16.5%;
 }
 
 .video-text {
@@ -974,22 +986,48 @@ table {
   }
 }
 .card-cinco-container {
-  border: 1px solid red;
   padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 50px;
 }
 
 .card-cinco-box {
-  max-width: 150px;
   width: 100%;
   height: auto;
+  text-align: center;
+}
+
+.card-cinco-icon {
+  margin-bottom: 1rem;
+}
+.card-cinco-icon img {
+  width: 100px;
 }
 
 .card-cinco-title {
   font-size: 1.5rem;
+  color: #2d549d;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .card-cinco-buttons {
-  border: 1px solid red;
+  align-self: end;
+  justify-self: center;
+}
+.card-cinco-buttons a {
+  min-width: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #4087c7;
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  border-radius: 2rem;
+  text-align: center;
 }
 
 .card-seis-container {
@@ -1144,27 +1182,73 @@ header {
 }
 .section-impacto-container {
   margin-top: 5rem;
-  border: 1px solid red;
+  background-image: radial-gradient(100% 75% at top, var(--color-primary) 100%, var(--color-primary) 100%, transparent 100%);
 }
 
 .section-impacto-box {
-  border: 1px solid red;
-  background-color: aqua;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: relative;
+  top: -100px;
 }
 
-.section-impacto-buttons {
-  border: 1px solid red;
-  margin-top: 5rem;
+.impacto-text {
+  padding: 1rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.impacto-title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.impacto-title h2 {
+  font-size: 3.75rem;
+  line-height: 1.2;
+}
+
+.impacto-description {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.impacto-image-map {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.impacto-image-map img {
+  max-width: 550px;
+  width: 100%;
 }
 
 .impacto-buttons-box {
+  padding: 0rem 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
+@media (max-width: 1200px) {
+  .section-impacto-container {
+    background-image: radial-gradient(150% 85% at top, var(--color-primary) 100%, var(--color-primary) 100%, transparent 100%);
+    margin-bottom: 5rem;
+  }
+  .section-impacto-box {
+    grid-template-columns: 1fr;
+    position: relative;
+    top: 5rem;
+  }
+  .impacto-text {
+    text-align: center;
+  }
+  .impacto-title h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
 .calificaciones-banner-container {
   border: 1px solid red;
 }

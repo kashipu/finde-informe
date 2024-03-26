@@ -1,8 +1,9 @@
-mixin video-banner(text, idvideo, textbtn, linkbtn)
+mixin video-banner(text, idvideo, textbtn, linkbtn, viewButton)
     section.video-banner-container
         .video-banner
             .video-text
                 p=text
-                a(href=linkbtn)=textbtn
+                if viewButton
+                    a(href=linkbtn)=textbtn
             .video-embed
                 lite-youtube(videoid!=idvideo)

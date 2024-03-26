@@ -1,0 +1,39 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.5 106.5"><defs><style>.cls-1{fill:#fff}</style></defs><g id="Layer_1-2" data-name="Layer 1"><path d="M53.25 106.5c29.41 0 53.25-23.84 53.25-53.25S82.66 0 53.25 0 0 23.84 0 53.25s23.84 53.25 53.25 53.25" style="fill:#112d6a"/><path class="cls-1" d="M79.98 61.24c-.46 0-.84.37-.84.83v.28H27.35v-.28c0-.46-.37-.83-.83-.83s-.84.37-.84.83v1.1c0 .46.37.83.84.83h53.46c.46 0 .83-.37.83-.83v-1.1c0-.46-.37-.83-.83-.83m0 5.51c-.46 0-.84.37-.84.83v.28H27.35v-.28c0-.46-.37-.83-.83-.83s-.84.37-.84.83v1.1c0 .46.37.83.84.83h53.46c.46 0 .83-.37.83-.83v-1.1c0-.46-.37-.83-.83-.83m0 5.52c-.46 0-.84.37-.84.83v.28H27.35v-.28c0-.46-.37-.83-.83-.83s-.84.37-.84.83v1.1c0 .46.37.83.84.83h53.46c.46 0 .83-.37.83-.83v-1.1c0-.46-.37-.83-.83-.83m0 5.51c-.46 0-.84.37-.84.83v.28H27.35v-.28c0-.46-.37-.83-.83-.83s-.84.37-.84.83v1.1c0 .46.37.83.84.83h53.46c.46 0 .83-.37.83-.83v-1.1c0-.46-.37-.83-.83-.83m-.83-20.95h-51.8V27.62h51.79v29.21Zm.84-30.87H26.52c-.46 0-.84.37-.84.83v30.87c0 .46.37.83.84.83h53.46c.46 0 .83-.37.83-.83V26.79c0-.46-.37-.83-.83-.83"/><path class="cls-1" d="M32.37 35.8a4.192 4.192 0 0 0 3.26-3.22h35.25c.33 1.62 1.62 2.89 3.26 3.22v12.84a4.19 4.19 0 0 0-3.26 3.23H35.63a4.163 4.163 0 0 0-3.26-3.23V35.8Zm-.83 14.41c1.38 0 2.51 1.11 2.51 2.48 0 .46.37.83.84.83h36.75c.46 0 .84-.37.84-.83 0-1.37 1.12-2.48 2.51-2.48.46 0 .83-.37.83-.83V35.05c0-.46-.37-.83-.83-.83-1.38 0-2.51-1.11-2.51-2.48a.83.83 0 0 0-.84-.83H34.89c-.46 0-.84.37-.84.83 0 1.37-1.12 2.48-2.51 2.48-.46 0-.84.37-.84.83v14.33c0 .46.38.83.84.83"/><path class="cls-1" d="M53.24 43.05c1.52 0 2.3.67 2.3 1.98 0 1.09-1.03 1.98-2.29 1.98-.96 0-1.82-.52-2.15-1.3a.834.834 0 0 0-1.09-.44c-.42.18-.63.66-.45 1.08.49 1.16 1.56 1.97 2.84 2.22v.81c0 .46.37.83.84.83s.83-.37.83-.83v-.8c1.79-.35 3.14-1.81 3.14-3.56s-1.04-3.64-3.97-3.64c-1.52 0-2.29-.67-2.29-1.98 0-1.1 1.03-1.98 2.29-1.98.95 0 1.82.52 2.15 1.3a.834.834 0 0 0 1.54-.64c-.49-1.16-1.57-1.97-2.85-2.22v-.81c0-.46-.37-.83-.83-.83s-.84.37-.84.83v.8c-1.78.35-3.12 1.81-3.12 3.55s1.04 3.64 3.96 3.64m-11.7-2.74c1.07 0 1.95.86 1.95 1.93s-.87 1.93-1.95 1.93-1.95-.87-1.95-1.93.87-1.93 1.95-1.93m0 5.51c2 0 3.62-1.61 3.62-3.58s-1.62-3.58-3.62-3.58-3.62 1.61-3.62 3.58 1.62 3.58 3.62 3.58m23.39-5.51c1.07 0 1.95.86 1.95 1.93s-.87 1.93-1.95 1.93-1.95-.87-1.95-1.93.87-1.93 1.95-1.93m0 5.51c2 0 3.62-1.61 3.62-3.58s-1.62-3.58-3.62-3.58-3.62 1.61-3.62 3.58 1.62 3.58 3.62 3.58"/></g><!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

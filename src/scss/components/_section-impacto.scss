@@ -1,19 +1,66 @@
 .section-impacto-container {
     margin-top: 5rem;
-    border: 1px solid red;
+    background-image:radial-gradient(100% 75% at top, var(--color-primary) 100%, var(--color-primary) 100%, transparent 100%);
 }
 .section-impacto-box {
-    border: 1px solid red;
-    background-color: aqua;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: -100px;
 }
-.section-impacto-buttons {
-    border: 1px solid red;
-    margin-top: 5rem;
+.impacto-text {
+    padding: 1rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.impacto-title {
+    font-weight: 700;
+    margin-bottom: 2rem;
+    h2 {
+        font-size: 3.75rem;
+        line-height: 1.2;
+    }
+}
+.impacto-description {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.impacto-image-map {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    img {
+        max-width: 550px;
+        width: 100%;
+    }
 }
 .impacto-buttons-box {
+    padding: 0rem 2rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
 }
+@media(min-width: 1201px) {}
+@media(max-width: 1200px) {
+    .section-impacto-container {
+        background-image:radial-gradient(150% 85% at top, var(--color-primary) 100%, var(--color-primary) 100%, transparent 100%);
+        margin-bottom: 5rem;
+    }
+    .section-impacto-box {
+        grid-template-columns: 1fr;
+        position: relative;
+        top: 5rem;
+    }
+    .impacto-text {
+        text-align: center;
+    }
+    .impacto-title {
+        h2 {
+            font-size: 3rem;
+            line-height: 1.2;
+        }
+    }
+}
+@media(max-width: 500px) {}

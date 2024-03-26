@@ -1,5 +1,10 @@
 // Imagen inicial ribbon
 .header-top__ribbon {
+    background-image: url("/public/images/senefatopok.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 20px;
     img {
         min-width: 1900px;
         width: 100%;

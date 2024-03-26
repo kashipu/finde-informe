@@ -1,9 +1,10 @@
-mixin card-cinco
+mixin card-cinco(icon, title, buttonText="Ver más", link="#")
     .card-cinco-container
         .card-cinco-box
             .card-cinco-icon
-                img(src="http://placehold.co/108x108", alt="", srcset="")
+                img(src=icon, alt="", srcset="")
             .card-cinco-title
-                p Contribución de Findeter a los ODS
-            .card-cinco-buttons
-                a Ver más
+                p=title
+        .card-cinco-buttons
+                a(href=link)
+                    p=buttonText
