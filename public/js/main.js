@@ -31,3 +31,6 @@ $('.cards-container-slick').slick({
       }
     ]
   });
+
+  const currentUrl = window.location.href
+  console.log(currentUrl)
