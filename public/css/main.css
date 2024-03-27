@@ -77,10 +77,34 @@ table {
   fill: var(--color-primary);
 }
 
+.global-container {
+  margin-top: 5rem;
+}
+
+.global-title h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.global-text {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 3rem;
+}
+.global-text p {
+  margin-bottom: 2rem;
+}
+
 :root {
   --color-primary: #112d6a;
   --color-secondary: #2d549d;
   --color-3: #b7d831;
+  --green-500: #43a756;
   --white: #FFFFFF;
   --background-color-page: #ECF3FA;
   --hover-nav-color: #2d549d;
@@ -577,6 +601,142 @@ table {
   margin-bottom: 2rem;
 }
 
+.gestion-ambiental-container {
+  margin-top: 5rem;
+}
+
+.gestion-ambiental-title h1 {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gestion-ambiental-text {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 3rem;
+}
+.gestion-ambiental-text p {
+  margin-bottom: 2rem;
+}
+
+.contribucion-container {
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.contribucion-text {
+  padding: 2rem 4rem;
+}
+.contribucion-text p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.contribucion-image img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+}
+
+.objetivos-banner-box {
+  margin-top: 6rem;
+}
+
+.objetivos-banner-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 3rem 0rem;
+  border: 1px 0px;
+  border-top: 2px dotted var(--green-500);
+  border-bottom: 2px solid var(--green-500);
+  border-style: dashed;
+}
+
+.objetivos-noborder {
+  border-top: none;
+}
+
+.objetivos-title {
+  color: #43a756;
+  font-weight: 600;
+  font-size: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.objetivos-title h2 {
+  display: flex;
+  justify-content: baseline;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.objetivos-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 2rem;
+}
+.objetivos-icons-grid img {
+  max-width: 150px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.planificacion-text {
+  margin-top: 3rem;
+}
+.planificacion-text p {
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.planificacion-slider {
+  margin-top: 5rem;
+  background-color: rebeccapurple;
+  padding: 10rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+.planificacion-slider p {
+  color: wheat;
+}
+
+.asistencia-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.asistencia-text {
+  background-color: #CCEEFB;
+  padding: 3rem;
+}
+.asistencia-text p {
+  line-height: 1.5;
+  font-size: 1.185rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+.asistencia-text span {
+  color: #2566af;
+  font-weight: 500;
+}
+
+.asistencia-image img {
+  width: 100%;
+  aspect-ratio: 4/3.5;
+  object-fit: cover;
+}
+
 .header-top__ribbon {
   background-image: url("/public/images/senefatopok.png");
   background-repeat: no-repeat;
@@ -587,6 +747,22 @@ table {
 .header-top__ribbon img {
   min-width: 1900px;
   width: 100%;
+}
+
+.header-logo-finde {
+  background-color: var(--color-primary);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo-image {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-logo-image img {
+  max-width: 200px;
 }
 
 .nav-main {
@@ -1326,4 +1502,70 @@ header {
 .directivo-cargo p {
   color: white;
   font-size: 1.125rem;
+}
+
+.financiacion-banner-container {
+  padding: 2rem;
+}
+
+.financiacion-title {
+  background-color: #1e6f41;
+  padding: 1rem;
+}
+.financiacion-title p {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+
+.financiacion-text {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--green-500);
+}
+.financiacion-text .financiacion-image {
+  padding: 2rem 0rem;
+}
+.financiacion-text .financiacion-image img {
+  width: 100%;
+  object-fit: cover;
+}
+.financiacion-text .financiacion-cifras {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.financiacion-cifra {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+.financiacion-cifra .cifra-icono img {
+  width: 100%;
+}
+.financiacion-cifra .cifra-content .cifra-text h2 {
+  font-size: 1.875rem;
+  color: white;
+  font-weight: 600;
+}
+.financiacion-cifra .cifra-content .cifra-body p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.financiacion-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-image: radial-gradient(60% 100% at top, #DBEC98 100%, #DBEC98 100%, transparent 100%);
+}
+
+.number-box {
+  display: flex;
 }

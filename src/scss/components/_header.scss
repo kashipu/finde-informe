@@ -10,3 +10,17 @@
         width: 100%;
     }
 }
+.header-logo-finde {
+    background-color: var(--color-primary);
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+}
+.header-logo-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        max-width: 200px;
+    }
+}

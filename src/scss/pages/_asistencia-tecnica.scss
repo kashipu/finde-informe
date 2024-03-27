@@ -1,0 +1,29 @@
+
+.asistencia-box {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.asistencia-text {
+    background-color: #CCEEFB;
+    padding: 3rem;
+    p {
+        line-height: 1.5;
+        font-size: 1.185rem;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+    span {
+        color: #2566af;
+        font-weight: 500;
+    }
+}
+
+.asistencia-image {
+    img {
+        width: 100%;
+        aspect-ratio: 4/3.5;
+        object-fit: cover;
+    }
+}
