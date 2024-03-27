@@ -738,7 +738,7 @@ table {
 }
 
 .header-top__ribbon {
-  background-image: url("/public/images/senefatopok.png");
+  background-image: url("../images/senefatopok.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
