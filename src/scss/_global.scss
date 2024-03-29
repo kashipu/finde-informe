@@ -46,7 +46,17 @@
     }
 }
 
+.fw-600 {
+    font-weight: 600;
+}
+
 
 @media(min-width: 1201px) {}
 @media(max-width: 1200px) {}
-@media(max-width: 500px) {}
+@media(max-width: 500px) {
+    .global-title {
+        h1 {
+            font-size: 2.2rem;
+        }
+    }
+}
