@@ -2,12 +2,15 @@
     display: flex;
     justify-content: flex-end;
     margin-top: 5rem;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 .video-banner {
     display: grid;
     grid-template-columns: .5fr 1fr;
     width: 100%;
-    margin-left: 8%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .video-text {
     background-color: #43A756;
@@ -48,8 +51,19 @@
     .video-text {
         p {
             font-size: 1.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
         }
     }
 }
-@media(max-width: 500px) {}
+@media(max-width: 500px) {
+    .video-banner-container {
+        margin-top: 1rem;
+    }
+    .video-text {
+        padding: 2.2rem;
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 0rem;
+        }
+    }
+}

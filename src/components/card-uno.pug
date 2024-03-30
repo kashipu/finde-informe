@@ -1,4 +1,4 @@
-mixin card-uno(texto)
+mixin card-uno(texto, icon)
     article.card-uno
         .card-uno-icon-arrow
             <svg data-name="card-uno" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.89 28.89">
@@ -14,5 +14,5 @@ mixin card-uno(texto)
             </svg>
         .card-uno-box
             .card-title
-                img(src="https://placehold.co/85x85" alt="")
+                img(src=icon alt="")
                 p=texto

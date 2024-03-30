@@ -17,11 +17,11 @@
 }
 
 .page-cards-section {
-    margin-top: 3rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    padding: 2rem;
 }
 // Cifras
 .page-cifras-section {
@@ -29,19 +29,18 @@
     justify-content: center;
 }
 .cifras-container {
+    width: 100%;
     margin-top: 7rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3rem;
-    row-gap: 3rem;
-    justify-items: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.page-cards-icons {
-
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-bottom: 5rem;
 }
 .cards-dos-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
+@media(min-width: 1201px) {}
+@media(max-width: 1200px) {}
+@media(max-width: 500px) {}

@@ -4,21 +4,26 @@ include ../components/card-dos.pug
 include ../components/cifras.pug
 block content
     include ../components/header.pug
-    .page-title.wrapper
-        h1 Cifras relevantes
-        p Hemos tenido un impacto significativo en el bienestar y el desarrollo sostenible del país, lo cual se refleja en nuestros logros destacados, resultado del compromiso con el fortalecimiento territorial y la inclusión financiera, por medio de soluciones.
+    .global-container
+        .global-box.wrapper-intern
+            .global-title
+                h1 Cifras relevantes
+            .global-text
+                p Hemos tenido un impacto significativo en el bienestar y el desarrollo sostenible del país, lo cual se refleja en nuestros logros destacados, resultado del compromiso con el fortalecimiento territorial y la inclusión financiera, por medio de soluciones sostenibles e innovadoras.
     .page-cards-section.wrapper
-        +card-uno('Financiación')
-        +card-uno('Asistencia técnica')
-        +card-uno('Planificación')
-    .page-cifras-section.wrapper
-        .cifras-container
+        +card-uno('Financiación', "./images/cifras-icon1.svg")
+        +card-uno('Asistencia técnica', "./images/cifras-icon2.svg")
+        +card-uno('Planificación', "./images/cifras-icon3.svg")
+    .page-cifras-section
+        //FIXME - Revisar esta página completa para ver las interacciones
+        .cifras-container.wrapper-intern
             +cifras('$3,89 billones', 'Desembolsos totales')
             +cifras('$2,42 billones ', 'Por redescuento')
             +cifras('$1,47 billones', 'Por crédito directo')
             +cifras('670', 'Proyectos')
             +cifras('411', 'Municipios impactados')
             +cifras('90%', 'Categorías  3, 4, 5 y 6')
+    //FIXME - Validar la interacción final de esto
     .page-cards-icons.wrapper
         .cards-dos-container
             +card-dos
