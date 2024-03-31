@@ -121,6 +121,15 @@ table {
   font-size: 1.125rem;
 }
 
+.d-none {
+  display: none;
+}
+
+@media (min-width: 1201px) {
+  .d-none {
+    display: block;
+  }
+}
 @media (max-width: 1200px) {
   .wrapper-intern {
     max-width: 80vw;
@@ -1152,9 +1161,6 @@ table {
   }
   .nav-list-dropdown .nav-item {
     padding-left: 1rem;
-  }
-  .nav-container-main {
-    display: none;
   }
 }
 @media (max-width: 500px) {

@@ -1,3 +1,10 @@
+// Nav-toggle
+const navBurguerButton = document.querySelector(".nav-burguer")
+const navDropdownMenu = document.querySelector(".nav-container-main")
+
+navBurguerButton.addEventListener("click", () => {
+  navDropdownMenu.classList.toggle("d-none")
+})
 
 $('.cards-container-slick').slick({
     dots: true,
