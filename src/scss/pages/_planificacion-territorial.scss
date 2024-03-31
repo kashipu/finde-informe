@@ -1,18 +1,29 @@
 .planificacion-text {
-    margin-top: 3rem;
+    padding: 2rem;
+    margin-top: 1rem;
     p {
         margin-bottom: 2rem;
         font-size: 1.125rem;
         line-height: 1.5;
     }
 }
-.planificacion-slider {
-    margin-top: 5rem;
-    background-color: rebeccapurple;
-    padding: 10rem 3rem;
-    display: flex;
-    justify-content: center;
-    p {
-        color: wheat;
+.planificacion-banner {
+    .video-banner-container{
+        .video-banner {
+            .video-text {
+                background-color: #4087c7;
+                p {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+@media(min-width:1201px) {}
+@media(max-width:900px) {}
+@media(max-width:900px) {}
+@media(max-width:500px) {
+    .planificacion-text {
+        margin-top: 1rem;
     }
 }

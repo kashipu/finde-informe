@@ -27,7 +27,7 @@ gulp.task('slick', () => {
 })
 
 gulp.task('imageop', () => {
-  return gulp.src('./src/images/*')
+  return gulp.src('./src/images/**/*')
   .pipe(imagemin())
   .pipe(gulp.dest('./public/images'))
 })

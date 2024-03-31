@@ -78,6 +78,9 @@
     .d-none {
         display: block;
     }
+    .wrapper-intern {
+        max-width: 80vw;
+    }
 }
 @media(max-width: 1200px) {
     .wrapper-intern {
