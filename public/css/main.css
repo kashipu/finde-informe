@@ -415,37 +415,85 @@ table {
 }
 
 .section-calificaciones-cards {
-  margin-top: 5rem;
+  margin-top: 1rem;
   display: flex;
-  gap: 1rem;
   justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.section-calificaciones-cards .card-uno {
+  background-color: #DAEDDD;
+}
+.section-calificaciones-cards .card-uno:hover {
+  background-color: #43a756;
+}
+.section-calificaciones-cards .card-uno .card-uno-icon-arrow .arrow-back {
+  fill: #43a756;
+}
+.section-calificaciones-cards .card-uno:hover .card-uno-icon-arrow .arrow-color {
+  fill: #43a756;
+}
+.section-calificaciones-cards .card-uno .card-title p {
+  color: #43a756;
 }
 
 .section-calificaciones-box {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .section-calificaciones-texto {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  padding: 2rem;
 }
 .section-calificaciones-texto .texto-box {
-  max-width: 40vw;
+  max-width: 38vw;
+  text-rendering: optimizeLegibility;
+  margin: 2.5rem;
 }
 .section-calificaciones-texto .texto-box h2 {
   font-weight: 500;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
+  color: var(--color-secondary);
 }
 .section-calificaciones-texto .texto-box p {
   font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.2;
+  font-size: 1.125rem;
+  line-height: 1.5;
   margin-bottom: 1.2rem;
 }
 
+@media (max-width: 1200px) {
+  .section-calificaciones-cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .section-calificaciones-texto {
+    padding: 0;
+  }
+  .section-calificaciones-texto .texto-box {
+    max-width: 90vw;
+    margin: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .section-calificaciones-cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .section-calificaciones-texto {
+    padding: 0;
+  }
+  .section-calificaciones-texto .texto-box {
+    max-width: 90vw;
+    margin: 2rem;
+  }
+}
 .directivos-title {
   margin-top: 5rem;
   margin-bottom: 4rem;
@@ -1102,8 +1150,9 @@ table {
 }
 .card-uno {
   background-color: #D5DDEB;
-  width: 320px;
-  height: 290px;
+  max-width: 320px;
+  width: 100%;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1746,23 +1795,75 @@ header {
     border-right: none;
   }
 }
-.calificaciones-banner-container {
-  border: 1px solid red;
-}
-
 .calificaciones-banner-box {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 3fr;
-  margin-bottom: 5rem;
 }
 
 .section-banner {
-  border: 1px solid red;
-}
-.section-banner img {
-  width: 100%;
+  padding: 6rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
+.section-icon img {
+  max-width: 100px;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.section-number {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 0.8;
+  color: white;
+}
+
+.section-banner-photo {
+  display: flex;
+}
+.section-banner-photo img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16/4;
+}
+
+.bgcard-1 {
+  background-color: #43a756;
+}
+
+.bgcard-2 {
+  background-color: var(--color-3);
+}
+.bgcard-2 .section-text, .bgcard-2 .section-number {
+  color: #1E6F41;
+}
+
+@media (max-width: 1200px) {
+  .calificaciones-banner-box {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .calificaciones-banner-box {
+    grid-template-columns: 1fr;
+  }
+  .section-banner-photo {
+    display: flex;
+  }
+  .section-banner-photo img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+}
 .directivo-item {
   padding: 1.2rem;
   font-size: 1.125rem;
