@@ -109,6 +109,17 @@ table {
   font-weight: 600;
 }
 
+.btn a {
+  background-color: var(--green-500);
+  padding: 1rem 4rem;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 2rem;
+  font-size: 1.125rem;
+}
+
 @media (max-width: 1200px) {
   .wrapper-intern {
     max-width: 80vw;
@@ -125,6 +136,9 @@ table {
   .wrapper-intern-70 {
     max-width: 90vw;
     margin: 0 auto;
+  }
+  .global-container {
+    margin-top: 3rem;
   }
   .global-title {
     padding: 1rem;
@@ -494,14 +508,6 @@ table {
     margin: 2rem;
   }
 }
-.directivos-title {
-  margin-top: 5rem;
-  margin-bottom: 4rem;
-}
-.directivos-title h1 {
-  color: var(--color-primary);
-}
-
 .directivos-subtitle {
   margin-bottom: 2rem;
 }
@@ -523,21 +529,98 @@ table {
   margin-bottom: 2rem;
 }
 
+.directivos-banner {
+  padding: 1.5rem;
+}
+
 .directivos-banner-title {
   padding: 1rem;
   background-color: #00acec;
 }
+.directivos-banner-title h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
 
 .directivos-banner-content {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   background-color: #2566af;
   padding: 1rem;
   margin-bottom: 3rem;
+  border-radius: 0rem 0rem 1rem 1rem;
 }
 
+.directivos-list-container {
+  margin-bottom: 5rem;
+}
+
+.directivos-list-title {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+.directivos-list-title h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  color: #2d549d;
+}
+
+.directivos-list-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.directivos-list-content ul {
+  padding: 2rem;
+}
+.directivos-list-content ul li {
+  line-height: 1.8;
+}
+.directivos-list-content ul li span {
+  font-weight: 600;
+  color: #2d549d;
+}
+
+.directivos-fotos-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.directivos-fotos-box img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.directivos-button {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .directivos-subtitle h2 {
+    font-size: 1.5rem;
+  }
+  .directivos-list-content {
+    grid-template-columns: 1fr;
+  }
+  .directivos-text {
+    max-width: 80vw;
+  }
+  .directivos-fotos-box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1201px) {
+  .directivos-text {
+    max-width: 80vw;
+  }
+}
 .talento-image img {
   width: 100%;
+  object-fit: cover;
 }
 
 .talento-box {
@@ -565,6 +648,29 @@ table {
   font-weight: 300;
 }
 
+@media (max-width: 1200px) {
+  .talento-box {
+    background-color: #D9F3FC;
+    padding: 3rem;
+    max-width: 90vw;
+    top: -30px;
+  }
+  .talento-title h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .talento-box {
+    background-color: #D9F3FC;
+    padding: 2rem;
+    max-width: 85vw;
+    top: -30px;
+  }
+  .talento-title h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
 .innovacion-container {
   margin-top: 5rem;
 }

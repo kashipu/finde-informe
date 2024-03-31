@@ -1,16 +1,6 @@
-.directivos-container {
-}
-.directivos-box {
-}
-.directivos-title {
-    margin-top: 5rem;
-    margin-bottom: 4rem;
-    h1 {
-        color: var(--color-primary);
-    }
-}
 .directivos-subtitle {
     margin-bottom: 2rem;
+
     h2 {
         font-size: 2.25rem;
         font-weight: 500;
@@ -18,9 +8,11 @@
         color: var(--color-secondary);
     }
 }
+
 .directivos-text {
     margin: 0 auto;
     max-width: 50vw;
+
     p {
         font-size: 1.125rem;
         font-weight: 300;
@@ -28,16 +20,103 @@
         margin-bottom: 2rem;
     }
 }
+
 .directivos-banner {
+    padding: 1.5rem;
 }
+
 .directivos-banner-title {
     padding: 1rem;
     background-color: #00acec;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: white;
+    }
 }
+
 .directivos-banner-content {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     background-color: #2566af;
     padding: 1rem;
     margin-bottom: 3rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.directivos-list-container {
+    margin-bottom: 5rem;
+}
+
+.directivos-list-title {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 500;
+        color: #2d549d;
+    }
+}
+
+.directivos-list-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+
+    ul {
+        padding: 2rem;
+
+        li {
+            line-height: 1.8;
+
+            span {
+                font-weight: 600;
+                color: #2d549d;
+            }
+        }
+    }
+}
+.directivos-fotos-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    img {
+        display: flex;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+.directivos-button {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+@media(max-width:500px) {
+    .directivos-subtitle {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    .directivos-list-content {
+        grid-template-columns: 1fr;
+    }
+    .directivos-text {
+        max-width: 80vw;
+    }
+    .directivos-fotos-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:1201px) {
+    .directivos-text {
+        max-width: 80vw;
+    }
 }

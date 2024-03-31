@@ -53,6 +53,18 @@
 .fw-600 {
     font-weight: 600;
 }
+.btn {
+    a {
+        background-color: var(--green-500);
+        padding: 1rem 4rem;
+        display: flex;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        border-radius: 2rem;
+        font-size: 1.125rem;
+    }
+}
 
 @media(min-width: 1201px) {}
 @media(max-width: 1200px) {
@@ -71,6 +83,9 @@
     .wrapper-intern-70 {
         max-width: 90vw;
         margin: 0 auto;
+    }
+    .global-container {
+        margin-top: 3rem;
     }
     .global-title {
         padding: 1rem;

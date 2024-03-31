@@ -2,9 +2,9 @@ extends ../layouts/base.pug
 include ../components/directivos-avatar.pug
 block content
     include ../components/header.pug
-    .directivos-container
-        .directivos-box.wrapper
-            .directivos-title
+    .global-container
+        .global-box.wrapper
+            .global-title
                 h1(class="section-title") Directivos
             .directivos-subtitle
                 h2 Junta directiva
@@ -22,29 +22,47 @@ block content
                 +directivos-avatar("Mauricio Olivera González", "Miembro independiente")
         .directivos-banner.wrapper
             .directivos-banner-title
-                h2 Principal
+                h2 Suplente
             .directivos-banner-content
-                +directivos-avatar("Nasly Jennifer Ruiz González", "Secretaria General Ministerio de Hacienda y Crédito Público")
-                +directivos-avatar("Carmen Astrid Romero Baquero", "Miembro independiente")
-                +directivos-avatar("Elsa Margarita Noguera de la Espriella", "Gobernadora del Atlántico")
-                +directivos-avatar("Jorge Armando Rodríguez Alarcón", "Miembro independiente")
-                +directivos-avatar("Mauricio Olivera González", "Miembro independiente")
+                +directivos-avatar("Néstor Mario Urrea Duque", "Director General de Apoyo Fiscal Ministerio de Hacienda y Crédito Público ")
+                +directivos-avatar("Luis Fernando Velasco Chaves", "Miembro independiente")
+                +directivos-avatar("Jhon Alexander Rojas Cabrera", "Gobernador de Nariño")
+                +directivos-avatar("Arturo José García Durán", "Miembro independiente")
+                +directivos-avatar("Martha Catalina Velasco Campuzano", "Ministra de Vivienda Ciudad y Territorio")
         .directivos-list-container
             .directivos-list-box.wrapper
                 .directivos-list-title
                     h2 Directivos
                 .directivos-list-content
                     ul
-                        li Juan Carlos Muñiz Pacheco, presidente
-                        li Richard Orlando Martínez Hurtado, vicepresidente Financiero
-                        li Liliana María Zapata Bustamante, secretaria general
-                        li Leonardo Fabio Ramos Lozada, vicepresidente de Riesgos
+                        li
+                            span 1. Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter
+                            | , Presidente
+                        li
+                            span 2. Richard Orlando Martínez Hurtado
+                            | , Vicepresidente Financiero
+                        li
+                            span 3. Liliana María Zapata Bustamante
+                            | , Secretaria general
+                        li
+                            span 4. Leonardo Fabio Ramos Lozada
+                            | , Vicepresidente de Riesgos
                     ul
-                        li Martha Patricia Martínez Barragán, vicepresidente Técnico
-                        li María Amparo Arango Valencia, vicepresidente Comercial
-                        li Ingrid Catalina Giraldo Cardona, vicepresidente de Operaciones
-                        li Laura Mercedes Peña Rodríguez, vicepresidente de Planeación
+                        li
+                            span 5. Martha Patricia Martínez Barragán
+                            | , Vicepresidente Técnico
+                        li
+                            span 6. María Amparo Arango Valencia
+                            | , Vicepresidente Comercial
+                        li
+                            span 7. Ingrid Catalina Giraldo Cardona
+                            | , Vicepresidente de Operaciones
+                        li
+                            span 8. Laura Mercedes Peña Rodríguez
+                            | , Vicepresidente de Planeación
         .directivos-fotos-container
-            .directivos-fotos-box.wrapper
-                img(src="https://placehold.co/440x559", alt="", srcset="")
-                img(src="https://placehold.co/838x559", alt="", srcset="")
+            .directivos-fotos-box
+                img(src="./images/foto-presidente.jpg", alt="Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter" title="Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter")
+                img(src="./images/equipo-vices.jpg", alt="Foto, Equipo Vicepresidentes" title="Foto, Equipo Vicepresidentes")
+        .directivos-button.btn
+            a(href="#") Consulta el plan completo aquí
