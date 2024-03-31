@@ -1,9 +1,9 @@
-section.file-banner-container
-    .file-banner.wrapper
-        .file-image
-            img(src="./images/cartaaccionistas.png", alt="Imagen,Carta accionistas")
-        .file-embed
-            .file-content
-                img(src='./images/download-banner-icon.svg', alt='')
-                //FIXME - Poner el link del archivo a descargar
-                a(href="#") Descarga aquí la carta a los accionistas
+mixin file-banner(image, text, link)
+    section.file-banner-container
+        .file-banner.wrapper
+            .file-image
+                img(src=image, alt="Imagen")
+            .file-embed
+                .file-content
+                    img(src='./images/download-banner-icon.svg', alt='')
+                    a(href=link)=text
