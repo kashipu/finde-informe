@@ -86,6 +86,9 @@ table {
   margin-top: 5rem;
 }
 
+.global-title {
+  padding: 0rem 1.2rem;
+}
 .global-title h1 {
   font-size: 3.75rem;
   font-weight: 700;
@@ -95,6 +98,8 @@ table {
 }
 
 .global-text {
+  max-width: 70vw;
+  margin: 0 auto;
   font-size: 1.5rem;
   line-height: 1.3;
   text-align: center;
@@ -137,6 +142,9 @@ table {
   .wrapper-intern-70 {
     max-width: 90vw;
     margin: 0 auto;
+  }
+  .global-text {
+    max-width: 100vw;
   }
 }
 @media (max-width: 500px) {
@@ -492,7 +500,6 @@ table {
 
 @media (max-width: 1200px) {
   .section-calificaciones-cards {
-    flex-direction: column;
     align-items: center;
     margin-top: 1rem;
   }
@@ -1529,7 +1536,8 @@ table {
 }
 
 .card-seis-container {
-  padding: 4rem 5rem;
+  background-color: #C8E7F6;
+  padding: 4rem 3rem;
   border-radius: 1rem;
   text-align: center;
 }
