@@ -103,6 +103,7 @@ table {
 }
 .global-text p {
   margin-bottom: 2rem;
+  padding: 0rem 2rem;
 }
 
 .fw-600 {
@@ -745,6 +746,11 @@ table {
 .innovacion-section3 .section3-box {
   display: flex;
   justify-content: center;
+  padding: 2rem;
+}
+.innovacion-section3 .section3-box img {
+  max-width: 912px;
+  width: 100%;
 }
 
 .innovacion-section4 {
@@ -767,7 +773,39 @@ table {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+.section4-cards .card-seis-container {
+  background-color: #F4F9E0;
+}
+.section4-cards .card-seis-container .card-seis-box .card-seis-text p span {
+  color: #1e6f41;
+}
 
+@media (max-width: 1200px) {
+  .section2-wrapper {
+    flex-direction: column;
+    max-width: 80vw;
+  }
+  .innovacion-section1 .section1-text {
+    max-width: 90vw;
+  }
+  .section2-wrapper {
+    flex-direction: column;
+    max-width: 90vw;
+  }
+  .innovacion-section4 {
+    margin-top: 1rem;
+  }
+  .section4-title {
+    max-width: 80vw;
+  }
+  .section4-cards {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .section4-cards .card-seis-container {
+    padding: 4rem 2rem;
+  }
+}
 .sostenibilidad-container {
   margin-top: 5rem;
 }
@@ -1485,9 +1523,8 @@ table {
 }
 
 .card-seis-container {
-  padding: 2rem;
+  padding: 4rem 5rem;
   border-radius: 1rem;
-  background-color: #C8E7F6;
   text-align: center;
 }
 
