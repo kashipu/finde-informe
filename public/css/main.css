@@ -1471,7 +1471,7 @@ table {
   }
   .video-text p {
     font-size: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 500px) {
@@ -1479,11 +1479,11 @@ table {
     margin-top: 1rem;
   }
   .video-text {
-    padding: 2.2rem;
+    padding: 2.5rem;
   }
   .video-text p {
     font-size: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
 }
 .file-banner-container {
@@ -1663,6 +1663,7 @@ table {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   align-self: end;
+  line-height: 1.2;
 }
 .card-tres-content .card-tres-text {
   font-size: 1.3rem;
