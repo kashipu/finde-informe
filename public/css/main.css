@@ -63,7 +63,7 @@ table {
 }
 
 .wrapper-intern {
-  max-width: 50vw;
+  max-width: 30vw;
   margin: 0 auto;
 }
 
@@ -135,12 +135,12 @@ table {
     display: block;
   }
   .wrapper-intern {
-    max-width: 80vw;
+    max-width: 50vw;
   }
 }
 @media (max-width: 1200px) {
   .wrapper-intern {
-    max-width: 80vw;
+    max-width: 40vw;
   }
   .wrapper-intern-70 {
     max-width: 90vw;
@@ -1198,6 +1198,51 @@ table {
   width: 100%;
   aspect-ratio: 5/3;
   object-fit: cover;
+}
+
+.finanzas1-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.finanzas1-text {
+  border: 1px solid red;
+}
+
+.finanzas1-grafico {
+  border: 1px solid red;
+}
+
+.finanzas-section2 {
+  border: 1px solid red;
+}
+
+.finanzas-box {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.finanzas-section3 {
+  border: 1px solid red;
+}
+
+.finanzas3-cards {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.finanzas3-item {
+  border: 1px solid red;
+  padding: 2rem;
+}
+
+.finanzas3-image {
+  border: 1px solid red;
+  text-align: center;
+  padding: 2rem;
 }
 
 .header-top__ribbon {
@@ -2479,4 +2524,38 @@ header {
   font-weight: 600;
   font-size: 1.25rem;
   border-radius: 0rem 0rem 3rem 0rem;
+}
+
+.gestion-ambiental-buttons {
+  display: flex;
+  border: 1px solid red;
+  justify-content: space-between;
+}
+
+.gestion-ambiental-contenedor {
+  border: 1px solid red;
+  height: 500px;
+}
+
+.gestion-ambiental-slide {
+  border: 1px solid green;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+}
+.gestion-ambiental-slide p {
+  text-align: center;
+  color: black;
+  font-weight: 800;
+  font-size: 10rem;
+}
+
+.gestion-ambiental-slide {
+  display: none;
+}
+
+.gestion-ambiental-slide:first-child {
+  display: block;
 }

@@ -1,0 +1,30 @@
+.gestion-ambiental-buttons{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+.gestion-ambiental-contenedor {
+    border: 1px solid red;
+    height: 500px;
+}
+
+.gestion-ambiental-slide {
+    border: 1px solid green;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: center;
+        color: black;
+        font-weight: 800;
+        font-size: 10rem;
+    }
+}
+.gestion-ambiental-slide {
+    display: none;
+}
+.gestion-ambiental-slide:first-child {
+    display: block;
+}

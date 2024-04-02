@@ -1,0 +1,40 @@
+.finanzas1-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.finanzas1-text {
+    border: 1px solid red;
+}
+
+.finanzas1-grafico {
+    border: 1px solid red;
+}
+
+.finanzas-section2 {
+    border: 1px solid red;
+}
+.finanzas-box {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.finanzas-section3 {
+    border: 1px solid red;
+}
+.finanzas3-cards {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+}
+.finanzas3-item {
+    border: 1px solid red;
+    padding: 2rem;
+}
+.finanzas3-image {
+    border: 1px solid red;
+    text-align: center;
+    padding: 2rem;
+}
