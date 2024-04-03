@@ -1,0 +1,43 @@
+.cifra-space-box {
+    padding: 2rem 2rem;
+    display: none;
+}
+
+.cifra-space-box:first-child {
+    display: block;
+}
+
+.cifra-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .icon-img {
+        max-width: 150px;
+        width: 100%;
+        filter: brightness(0%) invert(100%);
+    }
+    .cifra-text {
+        p {
+            font-size: 4rem;
+            text-align: center;
+            color: white;
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media(min-width: 1201px) {}
+@media(max-width: 1200px) {}
+@media(max-width: 500px) {
+    .cifra-icon {
+        .cifra-text {
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}

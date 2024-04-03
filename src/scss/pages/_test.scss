@@ -1,0 +1,43 @@
+.botones {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.boton-slide, .boton-slide2 {
+    border: 5px solid red;
+    padding: 5rem;
+    background-color: blue;
+}
+.contenedor {
+    border: 1px solid red;
+    padding: 3rem;
+}
+.slide-item, .slide-item2 {
+    border: 1px solid red;
+    padding: 2rem;
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 4rem;
+        font-weight: 700;
+    }
+}
+.slide-item, .slide-item2 {
+    display: none;
+}
+.slide-item:first-child, .slide-item2:first-child {
+    display: block;
+}
+
+//Estilos sliders
+
+.cifras-item {
+    display: none;
+}
+.cifras-item:first-child {
+    display: block;
+}

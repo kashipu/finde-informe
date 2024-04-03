@@ -23,11 +23,10 @@
     gap: 1rem;
     padding: 2rem;
 }
-// Cifras
 .page-cifras-section {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 10rem;
 }
+// Cifras
 .cifras-container {
     width: 100%;
     margin-top: 7rem;
@@ -35,12 +34,32 @@
     gap: 4rem;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     margin-bottom: 5rem;
+    p {
+        display: block;
+    }
 }
 .cards-dos-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
 }
 
+.page-cards-icons {
+    background-image:radial-gradient(80% 100% at bottom, #00acec 100%, #00acec 100%, transparent 100%);
+    padding: 2rem;
+    padding-top: 8rem;
+}
+.page-cards-content {
+    background-image:radial-gradient(80% 100% at top, #00acec 100%, #00acec 100%, transparent 100%);
+    padding: 5rem;
+}
 @media(min-width: 1201px) {}
 @media(max-width: 1200px) {}
-@media(max-width: 500px) {}
+@media(max-width: 500px) {
+    .page-cards-icons {
+        background-image:radial-gradient(300% 100% at bottom, #00acec 100%, #00acec 100%, transparent 100%);
+    }
+    .page-cards-content {
+        background-image:radial-gradient(300% 100% at top, #00acec 100%, #00acec 100%, transparent 100%);
+        padding: 2rem;
+    }
+}

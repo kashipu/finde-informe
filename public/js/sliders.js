@@ -1,16 +1,16 @@
-const gestionAmbientalButtons = document.querySelectorAll('.ambiental-button a');
-const gestionAmbientalContenedor = document.querySelectorAll('.gestion-ambiental-contenedor .gestion-ambiental-slide');
+function mostrarCifras(selectorCards, selectorCifras) {
+  const cards = document.querySelectorAll(selectorCards);
+  const cifras = document.querySelectorAll(selectorCifras);
 
-function slider(botones, contenedor) {
-    botones.forEach(function(boton, index) {
-      boton.addEventListener('click', function(event) {
-        event.preventDefault();
-        contenedor.forEach(function(img) {
-          img.style.display = 'none';
-        });
-        contenedor[index].style.display = 'block';
-      });
+  cards.forEach((card, index) => {
+    card.addEventListener('click', function() {
+      cifras.forEach(cifra => cifra.style.display = 'none');
+      cifras[index].style.display = 'block';
     });
-  }
+  });
+}
 
-  slider(gestionAmbientalButtons, gestionAmbientalContenedor)
+document.addEventListener('DOMContentLoaded', function() {
+  mostrarCifras('.card-uno', '.cifras-item');
+  mostrarCifras('.card-dos', '.cifra-space-box');
+});
