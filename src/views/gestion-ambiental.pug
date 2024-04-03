@@ -1,10 +1,11 @@
 extends ../layouts/base.pug
 block content
     include ../components/header.pug
-    .gestion-ambiental-container
-        .gestion-ambiental-box.wrapper-intern
-            .gestion-ambiental-title
-                h1 Gestión Ambiental
-            .gestion-ambiental-text
-                p Por medio de nuestro sistema de gestión ambiental, certificado con la norma 14001:2015, hemos garantizado la implementación y mantenimiento de la política ambiental de la entidad y salvaguardamos los aspectos e impactos ambientales derivados de la operación.
-    include ../components/gestion-ambiental-banner.pug
+    main.main-container
+        .gestion-ambiental-container
+            .gestion-ambiental-box.wrapper-intern
+                .gestion-ambiental-title
+                    h1 Gestión Ambiental
+                .gestion-ambiental-text
+                    p Por medio de nuestro sistema de gestión ambiental, certificado con la norma 14001:2015, hemos garantizado la implementación y mantenimiento de la política ambiental de la entidad y salvaguardamos los aspectos e impactos ambientales derivados de la operación.
+        include ../components/gestion-ambiental-banner.pug

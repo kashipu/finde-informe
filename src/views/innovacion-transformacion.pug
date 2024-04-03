@@ -2,30 +2,31 @@ extends ../layouts/base.pug
 include ../components/card-seis.pug
 block content
     include ../components/header.pug
-    .global-container.wrapper
-        .global-box
-            .global-title
-                h1 Innovación y transformación
-            .global-text
-                p Aceleramos la innovación y transformación en los diferentes equipos de trabajo, desde la identificación y solución a retos estratégicos, la consolidación de una cultura innovadora, el establecimiento de alianzas con actores del ecosistema, hasta la validación de soluciones con grupos de interés.
-    .innovacion-section1
-        .section1-text
-            p En 2023 se resaltan los resultados positivos otorgados a los proyectos de innovación e investigación presentados a la convocatoria de beneficios tributarios del Ministerio de Ciencia Tecnología e Innovación (Minciencias). A continuación, relacionamos los tres proyectos presentados por la entidad durante este año:
-    .innovacion-section2
-        .section2-wrapper
-            .section2-item
-                p Implementación de un servicio financiero accesible para los actores de la economía solidaria mediante la transformación del producto redescuento de Findeter, que corresponde a un proceso de innovación en producto.
-            .section2-item
-                p Metodología para la priorización de proyectos de infraestructura urbana y rural que permita orientar estratégicamente las decisiones de intervención de Findeter, como una investigación aplicada.
-            .section2-item
-                p Diseño de un modelo para la exploración de productos innovadores enfocado en segmentos de mercado no atendidos por la entidad, y basado en service design, como un proyecto de innovación.
-    .innovacion-section3
-        .section3-box
-            img(src="./images/innovacion-transformacion.jpg", alt="")
-    .innovacion-section4.wrapper
-        .section4-title
-            p En cuanto al avance de la transformación digital en nuestra entidad, destacamos los siguientes proyectos e iniciativas:
-        .section4-cards
-            +card-seis("<span>CRM a la nube:</span> se migró el CRM de la entidad a la nube, consolidando el CRM para los productos financieros y no financieros en una sola herramienta.", "./images/inno-icon1.svg")
-            +card-seis("<span>Core técnico:</span> se desarrolló el software para el seguimiento y control de los proyectos de asistencia técnica, y se realizaron las integraciones en AX para el proceso de gestión contractual.", "./images/inno-icon2.svg")
-            +card-seis("Elaboración del <span>Plan Estratégico de Tecnologías de la Información y la Comunicación PETI 2024-2026</span>, alineado con la política de gobierno digital para soportar la implementación de los objetivos estratégicos del nuevo plan de Findeter.", "./images/inno-icon3.svg")
+    main.main-container
+        .global-container.wrapper
+            .global-box
+                .global-title
+                    h1 Innovación y transformación
+                .global-text
+                    p Aceleramos la innovación y transformación en los diferentes equipos de trabajo, desde la identificación y solución a retos estratégicos, la consolidación de una cultura innovadora, el establecimiento de alianzas con actores del ecosistema, hasta la validación de soluciones con grupos de interés.
+        .innovacion-section1
+            .section1-text
+                p En 2023 se resaltan los resultados positivos otorgados a los proyectos de innovación e investigación presentados a la convocatoria de beneficios tributarios del Ministerio de Ciencia Tecnología e Innovación (Minciencias). A continuación, relacionamos los tres proyectos presentados por la entidad durante este año:
+        .innovacion-section2
+            .section2-wrapper
+                .section2-item
+                    p Implementación de un servicio financiero accesible para los actores de la economía solidaria mediante la transformación del producto redescuento de Findeter, que corresponde a un proceso de innovación en producto.
+                .section2-item
+                    p Metodología para la priorización de proyectos de infraestructura urbana y rural que permita orientar estratégicamente las decisiones de intervención de Findeter, como una investigación aplicada.
+                .section2-item
+                    p Diseño de un modelo para la exploración de productos innovadores enfocado en segmentos de mercado no atendidos por la entidad, y basado en service design, como un proyecto de innovación.
+        .innovacion-section3
+            .section3-box
+                img(src="./images/innovacion-transformacion.jpg", alt="")
+        .innovacion-section4.wrapper
+            .section4-title
+                p En cuanto al avance de la transformación digital en nuestra entidad, destacamos los siguientes proyectos e iniciativas:
+            .section4-cards
+                +card-seis("<span>CRM a la nube:</span> se migró el CRM de la entidad a la nube, consolidando el CRM para los productos financieros y no financieros en una sola herramienta.", "./images/inno-icon1.svg")
+                +card-seis("<span>Core técnico:</span> se desarrolló el software para el seguimiento y control de los proyectos de asistencia técnica, y se realizaron las integraciones en AX para el proceso de gestión contractual.", "./images/inno-icon2.svg")
+                +card-seis("Elaboración del <span>Plan Estratégico de Tecnologías de la Información y la Comunicación PETI 2024-2026</span>, alineado con la política de gobierno digital para soportar la implementación de los objetivos estratégicos del nuevo plan de Findeter.", "./images/inno-icon3.svg")

@@ -2,17 +2,18 @@ extends ../layouts/base.pug
 include ../components/video-banner.pug
 block content
     include ../components/header.pug
-    .global-container
-        .global-box.wrapper-intern
-            .global-title
-                h1 Planificación territorial
-            .global-text
-                p Desde hace más de una década venimos trabajando por la planificación sostenible de los territorios, por eso ofrecemos dentro de nuestro portafolio de productos y servicios la formulación de herramientas que ayudan a las administraciones de las entidades territoriales y a los distintos actores públicos y privados a construir territorios sostenibles, competitivos, ordenados e incluyentes.
-                p En 2023 culminamos las siguientes iniciativas:
-    .planificacion-banner
-        +video-banner('Plan Básico de Ordenamiento Territorial de San Sebastián de Mariquita (PBOT) (municipio categoría seis).', 'Iop82MAdQcY', "Hola mundo", "#", false)
-    .planificacion-slider
-        include ../components/slider-planificacion.pug
-    .planificacion-text.wrapper
-        p También, en el marco del Plan Pacífico y Guajira, liderado por la Vicepresidencia de la República, realizamos investigaciones sobre estas dos zonas de país para identificar sus principales necesidades, problemáticas y potencialidades, con el fin de priorizar proyectos de acuerdo con los objetivos del Plan Nacional de Desarrollo (PND).
-        p Así mismo, iniciamos la creación del Observatorio del Sistema de Territorios (OST), con el que buscamos servir como un pilar fundamental para la planificación estratégica y el desarrollo sostenible en el país. Como parte de esta iniciativa construimos la primera aproximación de conocimiento de 183 municipios, la mayoría pertenecientes a categorías 3, 4, 5 y 6.
+    main.main-container
+        .global-container
+            .global-box.wrapper-intern
+                .global-title
+                    h1 Planificación territorial
+                .global-text
+                    p Desde hace más de una década venimos trabajando por la planificación sostenible de los territorios, por eso ofrecemos dentro de nuestro portafolio de productos y servicios la formulación de herramientas que ayudan a las administraciones de las entidades territoriales y a los distintos actores públicos y privados a construir territorios sostenibles, competitivos, ordenados e incluyentes.
+                    p En 2023 culminamos las siguientes iniciativas:
+        .planificacion-banner
+            +video-banner('Plan Básico de Ordenamiento Territorial de San Sebastián de Mariquita (PBOT) (municipio categoría seis).', 'Iop82MAdQcY', "Hola mundo", "#", false)
+        .planificacion-slider
+            include ../components/slider-planificacion.pug
+        .planificacion-text.wrapper
+            p También, en el marco del Plan Pacífico y Guajira, liderado por la Vicepresidencia de la República, realizamos investigaciones sobre estas dos zonas de país para identificar sus principales necesidades, problemáticas y potencialidades, con el fin de priorizar proyectos de acuerdo con los objetivos del Plan Nacional de Desarrollo (PND).
+            p Así mismo, iniciamos la creación del Observatorio del Sistema de Territorios (OST), con el que buscamos servir como un pilar fundamental para la planificación estratégica y el desarrollo sostenible en el país. Como parte de esta iniciativa construimos la primera aproximación de conocimiento de 183 municipios, la mayoría pertenecientes a categorías 3, 4, 5 y 6.

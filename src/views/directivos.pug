@@ -2,67 +2,68 @@ extends ../layouts/base.pug
 include ../components/directivos-avatar.pug
 block content
     include ../components/header.pug
-    .global-container
-        .global-box.wrapper
-            .global-title
-                h1(class="section-title") Directivos
-            .directivos-subtitle
-                h2 Junta directiva
-            .directivos-text
-                p La Junta Directiva está integrada por cinco miembros principales y cinco suplentes, quienes deben ser elegidos por la Asamblea de Accionistas por un periodo de dos años. Mínimo tres de ellos deben tener la calidad de independientes; de acuerdo con lo señalado en el parágrafo segundo del artículo 34 de los Estatutos Sociales, los nombramientos de Junta Directiva pueden ser a título personal o a un cargo determinado.
-                p Al 31 de diciembre de 2023, la conformación de la Junta Directiva presidida por la secretaria general del Ministerio de Hacienda y Crédito Público era la siguiente:
-        .directivos-banner.wrapper
-            .directivos-banner-title
-                h2 Principal
-            .directivos-banner-content
-                +directivos-avatar("Nasly Jennifer Ruiz González", "Secretaria General Ministerio de Hacienda y Crédito Público")
-                +directivos-avatar("Carmen Astrid Romero Baquero", "Miembro independiente")
-                +directivos-avatar("Elsa Margarita Noguera de la Espriella", "Gobernadora del Atlántico")
-                +directivos-avatar("Jorge Armando Rodríguez Alarcón", "Miembro independiente")
-                +directivos-avatar("Mauricio Olivera González", "Miembro independiente")
-        .directivos-banner.wrapper
-            .directivos-banner-title
-                h2 Suplente
-            .directivos-banner-content
-                +directivos-avatar("Néstor Mario Urrea Duque", "Director General de Apoyo Fiscal Ministerio de Hacienda y Crédito Público ")
-                +directivos-avatar("Luis Fernando Velasco Chaves", "Miembro independiente")
-                +directivos-avatar("Jhon Alexander Rojas Cabrera", "Gobernador de Nariño")
-                +directivos-avatar("Arturo José García Durán", "Miembro independiente")
-                +directivos-avatar("Martha Catalina Velasco Campuzano", "Ministra de Vivienda Ciudad y Territorio")
-        .directivos-list-container
-            .directivos-list-box.wrapper
-                .directivos-list-title
-                    h2 Directivos
-                .directivos-list-content
-                    ul
-                        li
-                            span 1. Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter
-                            | , Presidente
-                        li
-                            span 2. Richard Orlando Martínez Hurtado
-                            | , Vicepresidente Financiero
-                        li
-                            span 3. Liliana María Zapata Bustamante
-                            | , Secretaria general
-                        li
-                            span 4. Leonardo Fabio Ramos Lozada
-                            | , Vicepresidente de Riesgos
-                    ul
-                        li
-                            span 5. Martha Patricia Martínez Barragán
-                            | , Vicepresidente Técnico
-                        li
-                            span 6. María Amparo Arango Valencia
-                            | , Vicepresidente Comercial
-                        li
-                            span 7. Ingrid Catalina Giraldo Cardona
-                            | , Vicepresidente de Operaciones
-                        li
-                            span 8. Laura Mercedes Peña Rodríguez
-                            | , Vicepresidente de Planeación
-        .directivos-fotos-container
-            .directivos-fotos-box
-                img(src="./images/foto-presidente.jpg", alt="Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter" title="Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter")
-                img(src="./images/equipo-vices.jpg", alt="Foto, Equipo Vicepresidentes" title="Foto, Equipo Vicepresidentes")
-        .directivos-button.btn
-            a(href="#") Consulta el plan completo aquí
+    main.main-container
+        .global-container
+            .global-box.wrapper
+                .global-title
+                    h1(class="section-title") Directivos
+                .directivos-subtitle
+                    h2 Junta directiva
+                .directivos-text
+                    p La Junta Directiva está integrada por cinco miembros principales y cinco suplentes, quienes deben ser elegidos por la Asamblea de Accionistas por un periodo de dos años. Mínimo tres de ellos deben tener la calidad de independientes; de acuerdo con lo señalado en el parágrafo segundo del artículo 34 de los Estatutos Sociales, los nombramientos de Junta Directiva pueden ser a título personal o a un cargo determinado.
+                    p Al 31 de diciembre de 2023, la conformación de la Junta Directiva presidida por la secretaria general del Ministerio de Hacienda y Crédito Público era la siguiente:
+            .directivos-banner.wrapper
+                .directivos-banner-title
+                    h2 Principal
+                .directivos-banner-content
+                    +directivos-avatar("Nasly Jennifer Ruiz González", "Secretaria General Ministerio de Hacienda y Crédito Público")
+                    +directivos-avatar("Carmen Astrid Romero Baquero", "Miembro independiente")
+                    +directivos-avatar("Elsa Margarita Noguera de la Espriella", "Gobernadora del Atlántico")
+                    +directivos-avatar("Jorge Armando Rodríguez Alarcón", "Miembro independiente")
+                    +directivos-avatar("Mauricio Olivera González", "Miembro independiente")
+            .directivos-banner.wrapper
+                .directivos-banner-title
+                    h2 Suplente
+                .directivos-banner-content
+                    +directivos-avatar("Néstor Mario Urrea Duque", "Director General de Apoyo Fiscal Ministerio de Hacienda y Crédito Público ")
+                    +directivos-avatar("Luis Fernando Velasco Chaves", "Miembro independiente")
+                    +directivos-avatar("Jhon Alexander Rojas Cabrera", "Gobernador de Nariño")
+                    +directivos-avatar("Arturo José García Durán", "Miembro independiente")
+                    +directivos-avatar("Martha Catalina Velasco Campuzano", "Ministra de Vivienda Ciudad y Territorio")
+            .directivos-list-container
+                .directivos-list-box.wrapper
+                    .directivos-list-title
+                        h2 Directivos
+                    .directivos-list-content
+                        ul
+                            li
+                                span 1. Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter
+                                | , Presidente
+                            li
+                                span 2. Richard Orlando Martínez Hurtado
+                                | , Vicepresidente Financiero
+                            li
+                                span 3. Liliana María Zapata Bustamante
+                                | , Secretaria general
+                            li
+                                span 4. Leonardo Fabio Ramos Lozada
+                                | , Vicepresidente de Riesgos
+                        ul
+                            li
+                                span 5. Martha Patricia Martínez Barragán
+                                | , Vicepresidente Técnico
+                            li
+                                span 6. María Amparo Arango Valencia
+                                | , Vicepresidente Comercial
+                            li
+                                span 7. Ingrid Catalina Giraldo Cardona
+                                | , Vicepresidente de Operaciones
+                            li
+                                span 8. Laura Mercedes Peña Rodríguez
+                                | , Vicepresidente de Planeación
+            .directivos-fotos-container
+                .directivos-fotos-box
+                    img(src="./images/foto-presidente.jpg", alt="Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter" title="Foto, Juan Carlos Muñiz Pacheco, Presidente Findeter")
+                    img(src="./images/equipo-vices.jpg", alt="Foto, Equipo Vicepresidentes" title="Foto, Equipo Vicepresidentes")
+            .directivos-button.btn
+                a(href="#") Consulta el plan completo aquí

@@ -8,52 +8,53 @@ mixin section2-item(foto, text)
             p !{text}
 block content
     include ../components/header.pug
-    .global-container
-        .global-box.wrapper-intern
-            .global-title
-                h1 Economía popular
-            .global-text
-                p En Findeter hemos implementado el cambio de enfoque del Gobierno nacional. Este cambio se alinea de manera integral con las metas y objetivos establecidos en el Plan Nacional de Desarrollo 2022-2026 - PND, Colombia Potencia Mundial de la Vida, y se materializa a través de nuestro Plan Estratégico Transformando Regiones.
-    .economia-section1
-        .economia1-container.wrapper
-            .economia1-box
-                .economia1-text
-                    p Esta iniciativa tiene como finalidad fortalecer los modelos de desarrollo de las expresiones organizativas comunitarias, aprovechando economías de escala y su potencial productivo, con el fin de reducir y cerrar las brechas regionales a lo largo del territorio nacional.
-                    p La integración de ejecutores de economía popular en los proyectos facilitados por la banca de desarrollo trae múltiples ventajas:
-                .economia1-img
-                     img(src='https://placehold.co/50x50', alt='')
-    .economia-section2
-        .economia2-container.wrapper
-            .economia2-box
-                +section2-item("https://placehold.co/50x50", "Garantiza que los proyectos estén más alineados con las necesidades y expectativas de las comunidades locales, asegurando que los beneficios del desarrollo sean compartidos de manera equitativa.")
-                +section2-item("https://placehold.co/50x50", "Impulsa la creación de empleo local y el fortalecimiento de economías regionales, contribuyendo a la reducción de desigualdades.")
-                +section2-item("https://placehold.co/50x50", "Mejora la sostenibilidad de los proyectos, aprovechando el conocimiento profundo que poseen las comunidades locales sobre el entorno y las prácticas sostenibles.")
-    .economia-section3
-        .economia3-container.wrapper
-            .economia3-box
-                .economia3-text
-                    p Desde Findeter hemos apostado por el desarrollo de proyectos directamente con las comunidades en sectores productivos, en el marco de contratos y convenios interadministrativos con aliados como Artesanías de Colombia, Ministerio del Interior, Ministerio Agricultura e Invías, entre otros.
-                    p Cada proyecto destaca por su enfoque colaborativo entre las entidades de orden nacional, donde los más de 900 ejecutores de economía popular participarán en la implementación y contribución para la toma de decisiones, asegurando que los proyectos se alineen con las necesidades y objetivos de las comunidades a las que sirven.
-                .economia3-img
-                     img(src='https://placehold.co/50x50', alt='')
-    .economia-section4
-        .economia4-title.wrapper
-            h2 Casos destacados
-        .economia4-container.wrapper
-            .economia4-box
-                +card-uno
-                +card-uno
-                +card-uno
-                +card-uno
-    .economia-section5
-        .economia5-container.wrapper
-            .economia5-title.wrapper
-                h2 Mantenimiento y adecuación de inmuebles - Artesanías de Colombia
-            .economia5-box
-                .economia5-text
-                    p Proyectos de mantenimiento y adecuaciones de los inmuebles propiedad de Artesanías de Colombia S.A. – BIC a nivel nacional, en relación con las sedes que se prioricen por parte de la entidad (Bogotá, San Jacinto y Ráquira).
-                    span Valor: COP2.000 millones.
-                    p Ejecutores de economía popular: actualmente siete juntas de acción comunal.
-                    p Impacto: revitalizar y preservar los espacios físicos clave para la promoción y desarrollo del arte y la cultura artesanal con mayores capacidades operativas, lo que contribuirá a la valorización y el reconocimiento del patrimonio cultural inmaterial del país.
-                .economia5-img
-                     img(src='https://placehold.co/50x50', alt='')
+    main.main-container
+        .global-container
+            .global-box.wrapper-intern
+                .global-title
+                    h1 Economía popular
+                .global-text
+                    p En Findeter hemos implementado el cambio de enfoque del Gobierno nacional. Este cambio se alinea de manera integral con las metas y objetivos establecidos en el Plan Nacional de Desarrollo 2022-2026 - PND, Colombia Potencia Mundial de la Vida, y se materializa a través de nuestro Plan Estratégico Transformando Regiones.
+        .economia-section1
+            .economia1-container.wrapper
+                .economia1-box
+                    .economia1-text
+                        p Esta iniciativa tiene como finalidad fortalecer los modelos de desarrollo de las expresiones organizativas comunitarias, aprovechando economías de escala y su potencial productivo, con el fin de reducir y cerrar las brechas regionales a lo largo del territorio nacional.
+                        p La integración de ejecutores de economía popular en los proyectos facilitados por la banca de desarrollo trae múltiples ventajas:
+                    .economia1-img
+                        img(src='https://placehold.co/50x50', alt='')
+        .economia-section2
+            .economia2-container.wrapper
+                .economia2-box
+                    +section2-item("https://placehold.co/50x50", "Garantiza que los proyectos estén más alineados con las necesidades y expectativas de las comunidades locales, asegurando que los beneficios del desarrollo sean compartidos de manera equitativa.")
+                    +section2-item("https://placehold.co/50x50", "Impulsa la creación de empleo local y el fortalecimiento de economías regionales, contribuyendo a la reducción de desigualdades.")
+                    +section2-item("https://placehold.co/50x50", "Mejora la sostenibilidad de los proyectos, aprovechando el conocimiento profundo que poseen las comunidades locales sobre el entorno y las prácticas sostenibles.")
+        .economia-section3
+            .economia3-container.wrapper
+                .economia3-box
+                    .economia3-text
+                        p Desde Findeter hemos apostado por el desarrollo de proyectos directamente con las comunidades en sectores productivos, en el marco de contratos y convenios interadministrativos con aliados como Artesanías de Colombia, Ministerio del Interior, Ministerio Agricultura e Invías, entre otros.
+                        p Cada proyecto destaca por su enfoque colaborativo entre las entidades de orden nacional, donde los más de 900 ejecutores de economía popular participarán en la implementación y contribución para la toma de decisiones, asegurando que los proyectos se alineen con las necesidades y objetivos de las comunidades a las que sirven.
+                    .economia3-img
+                        img(src='https://placehold.co/50x50', alt='')
+        .economia-section4
+            .economia4-title.wrapper
+                h2 Casos destacados
+            .economia4-container.wrapper
+                .economia4-box
+                    +card-uno
+                    +card-uno
+                    +card-uno
+                    +card-uno
+        .economia-section5
+            .economia5-container.wrapper
+                .economia5-title.wrapper
+                    h2 Mantenimiento y adecuación de inmuebles - Artesanías de Colombia
+                .economia5-box
+                    .economia5-text
+                        p Proyectos de mantenimiento y adecuaciones de los inmuebles propiedad de Artesanías de Colombia S.A. – BIC a nivel nacional, en relación con las sedes que se prioricen por parte de la entidad (Bogotá, San Jacinto y Ráquira).
+                        span Valor: COP2.000 millones.
+                        p Ejecutores de economía popular: actualmente siete juntas de acción comunal.
+                        p Impacto: revitalizar y preservar los espacios físicos clave para la promoción y desarrollo del arte y la cultura artesanal con mayores capacidades operativas, lo que contribuirá a la valorización y el reconocimiento del patrimonio cultural inmaterial del país.
+                    .economia5-img
+                        img(src='https://placehold.co/50x50', alt='')

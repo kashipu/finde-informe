@@ -3,5 +3,6 @@ include ../components/file-banner.pug
 include ../components/video-banner.pug
 block content
     include ../components/header.pug
-    +video-banner("Ver video perspectivas 2024", "#", false)(class="fw-600")
-    +file-banner("https://placehold.co/562x400", "Descarga aquí el pfd de las perspectivas 2024", "#")
+    main.main-container
+        +video-banner("Ver video perspectivas 2024", "#", false)(class="fw-600")
+        +file-banner("https://placehold.co/562x400", "Descarga aquí el pfd de las perspectivas 2024", "#")

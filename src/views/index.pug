@@ -4,43 +4,44 @@ include ../components/card-cuatro.pug
 include ../components/video-banner.pug
 block content
     include ../components/header-home.pug
-    .download-container
-        a(href="" target="_blank")
-            .download-button
-                .icon-download
-                    img(src="./images/download-icon.svg", alt="")
-                .text-download
-                    p Descargar informe completo
-    .welcome-banner
-        .welcome-title.wrapper
-            h1.color1 Bienvenidos al informe
-        +video-banner('2023 ha sido un año de resultados históricos para Findeter. Nuestro presidente, Juan Carlos Muñiz Pacheco, habla de los principales logros de esta gestión.', 'Iop82MAdQcY', 'Ver más', '#', true)
-    .section-destacados
-        .title
-            h2.section-title.color1 Hechos destacados
-        .cards-container.wrapper
-            +card-tres("./images/card-dest1.png","Cifras relevantes", "Tenemos un impacto significativo en el bienestar y el desarrollo del país.")
-            +card-tres("./images/card-dest2.png","Reconocimientos", "Distintas instituciones reconocen nuestra gestión en diferentes áreas.")
-    .section-gestion
-        .title
-            h2.section-title.color1 Nuestra gestión
-        .cards-container
-            +card-cuatro("./images/gestionbg1.png", "./images/gestion1.svg", "Estrategia corporativa", "Conozca Transformando Regiones, nuestro plan estratégico.")(class="bg2")
-            +card-cuatro("./images/gestionbg2.png", "./images/gestion2.svg", "Calificaciones", "Nuestra entidad destaca en las principales mediciones institucionales.")(class="bg3")
-            +card-cuatro("./images/gestionbg3.png", "./images/gestion3.svg", "Productos", "Contamos con un completo portafolio de financiación y asistencia técnica.")(class="bg1")
-            +card-cuatro("./images/gestionbg4.png", "./images/gestion4.svg", "Directivos", "Este es el equipo que lidera nuestra entidad.")(class="bg1")
-            +card-cuatro("./images/gestionbg5.png", "./images/gestion5.svg", "Talento Findeter", "Somos una empresa efr que busca conciliar el ámbito profesional con el personal y familiar.")(class="bg2")
-            +card-cuatro("./images/gestionbg6.png", "./images/gestion6.svg", "Innovación y Transformación", "Promovemos la cultura innovadora en toda la entidad.")(class="bg3")
-    .section-desarrollo
-        .title
-            h2.section-title Desarrollo sostenible
-        .cards-container-overlay
-        .cards-container-box
-            .cards-container-slick
-                +card-tres("./images/desarrollo-slider1.png", "Ejes de sostenibilidad", "Promovemos el equilibrio social, económico y ambiental de nuestra operación.")
-                +card-tres("./images/desarrollo-slider2.png", "Responsabilidad social", "Potenciamos el impacto social de nuestros proyectos.")
-                +card-tres("./images/desarrollo-slider3.png", "Gestión <br> ambiental", "Garantizamos la implementación y mantenimiento de la política ambiental.")
-    .section-impacto
-        include ../components/section-impacto.pug
+    main.main-container
+        .download-container
+            a(href="" target="_blank")
+                .download-button
+                    .icon-download
+                        img(src="./images/download-icon.svg", alt="")
+                    .text-download
+                        p Descargar informe completo
+        .welcome-banner
+            .welcome-title.wrapper
+                h1.color1 Bienvenidos al informe
+            +video-banner('2023 ha sido un año de resultados históricos para Findeter. Nuestro presidente, Juan Carlos Muñiz Pacheco, habla de los principales logros de esta gestión.', 'Iop82MAdQcY', 'Ver más', '#', true)
+        .section-destacados
+            .title
+                h2.section-title.color1 Hechos destacados
+            .cards-container.wrapper
+                +card-tres("./images/card-dest1.png","Cifras relevantes", "Tenemos un impacto significativo en el bienestar y el desarrollo del país.")
+                +card-tres("./images/card-dest2.png","Reconocimientos", "Distintas instituciones reconocen nuestra gestión en diferentes áreas.")
+        .section-gestion
+            .title
+                h2.section-title.color1 Nuestra gestión
+            .cards-container
+                +card-cuatro("./images/gestionbg1.png", "./images/gestion1.svg", "Estrategia corporativa", "Conozca Transformando Regiones, nuestro plan estratégico.")(class="bg2")
+                +card-cuatro("./images/gestionbg2.png", "./images/gestion2.svg", "Calificaciones", "Nuestra entidad destaca en las principales mediciones institucionales.")(class="bg3")
+                +card-cuatro("./images/gestionbg3.png", "./images/gestion3.svg", "Productos", "Contamos con un completo portafolio de financiación y asistencia técnica.")(class="bg1")
+                +card-cuatro("./images/gestionbg4.png", "./images/gestion4.svg", "Directivos", "Este es el equipo que lidera nuestra entidad.")(class="bg1")
+                +card-cuatro("./images/gestionbg5.png", "./images/gestion5.svg", "Talento Findeter", "Somos una empresa efr que busca conciliar el ámbito profesional con el personal y familiar.")(class="bg2")
+                +card-cuatro("./images/gestionbg6.png", "./images/gestion6.svg", "Innovación y Transformación", "Promovemos la cultura innovadora en toda la entidad.")(class="bg3")
+        .section-desarrollo
+            .title
+                h2.section-title Desarrollo sostenible
+            .cards-container-overlay
+            .cards-container-box
+                .cards-container-slick
+                    +card-tres("./images/desarrollo-slider1.png", "Ejes de sostenibilidad", "Promovemos el equilibrio social, económico y ambiental de nuestra operación.")
+                    +card-tres("./images/desarrollo-slider2.png", "Responsabilidad social", "Potenciamos el impacto social de nuestros proyectos.")
+                    +card-tres("./images/desarrollo-slider3.png", "Gestión <br> ambiental", "Garantizamos la implementación y mantenimiento de la política ambiental.")
+        .section-impacto
+            include ../components/section-impacto.pug
 
-    +video-banner('Seguiremos contribuyendo al desarrollo de la infraestructura social del país y aumentaremos nuestra cobertura en los municipios de categorías 3, 4, 5 y 6.', 'zN_Er1QubuY', 'Ver más', '#', true)
+        +video-banner('Seguiremos contribuyendo al desarrollo de la infraestructura social del país y aumentaremos nuestra cobertura en los municipios de categorías 3, 4, 5 y 6.', 'zN_Er1QubuY', 'Ver más', '#', true)

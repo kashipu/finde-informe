@@ -2,15 +2,16 @@ extends ../layouts/base.pug
 include ../components/card-seis.pug
 block content
     include ../components/header.pug
-    .global-container
-        .global-box
-            .global-title
-                h1(class="section-title color1") Reconocimientos
-    .reconocimiento-cards
-        .reconocimiento-box.wrapper-intern
-            +card-seis("Fuimos ratificados por el Ministerio de Ciencia, Tecnología e Innovación como <span>actor clave del ecosistema de I+D+i del país.</span>", "./images/recono-icon1.svg")
-            +card-seis("<span>Obtuvimos por noveno añoconsecutivo el reconocimiento IR-BCV</span>, mediante el cual se nos destaca el cumplimiento e implementación de los más altos estándares establecidos en la Circular Única de la Bolsa de Valores, en materia de gobierno corporativo, revelación de información y relación con inversionistas.", "./images/recono-icon2.svg")
-            +card-seis("<span>Alcanzamos el reconocimiento del GRI (Latam 2023)</span> por haber realizado el Reporte de Sostenibilidad mediante el Programa de Negocios Competitivos, contribuyendo a una Colombia más sostenible.", "./images/recono-icon3.svg")
-            +card-seis("<span>Ganamos el premio ALIDE en la categoría Gestión y Modernización</span> Tecnológica al Programa Vende Digital del MinTic.", "./images/recono-icon4.svg")
-            +card-seis("Recibimos de la Cámara de la Diversidad certificado de bienvenida que nos acredita como <span>entidad comprometida con la diversidad, equidad e inclusión económica.</span>", "./images/recono-icon5.svg")
-            +card-seis("<span>Estuvimos en el Top 5 emisores, con mejores niveles de adopción del estándar de revelación en 2023</span>, ranking de emisor de valores IR que divulga la Bolsa de Valores de Colombia, gracias al diagnóstico que realiza en alianza con el CESA. ", "./images/recono-icon6.svg")
+    main.main-container
+        .global-container
+            .global-box
+                .global-title
+                    h1(class="section-title color1") Reconocimientos
+        .reconocimiento-cards
+            .reconocimiento-box.wrapper-intern
+                +card-seis("Fuimos ratificados por el Ministerio de Ciencia, Tecnología e Innovación como <span>actor clave del ecosistema de I+D+i del país.</span>", "./images/recono-icon1.svg")
+                +card-seis("<span>Obtuvimos por noveno añoconsecutivo el reconocimiento IR-BCV</span>, mediante el cual se nos destaca el cumplimiento e implementación de los más altos estándares establecidos en la Circular Única de la Bolsa de Valores, en materia de gobierno corporativo, revelación de información y relación con inversionistas.", "./images/recono-icon2.svg")
+                +card-seis("<span>Alcanzamos el reconocimiento del GRI (Latam 2023)</span> por haber realizado el Reporte de Sostenibilidad mediante el Programa de Negocios Competitivos, contribuyendo a una Colombia más sostenible.", "./images/recono-icon3.svg")
+                +card-seis("<span>Ganamos el premio ALIDE en la categoría Gestión y Modernización</span> Tecnológica al Programa Vende Digital del MinTic.", "./images/recono-icon4.svg")
+                +card-seis("Recibimos de la Cámara de la Diversidad certificado de bienvenida que nos acredita como <span>entidad comprometida con la diversidad, equidad e inclusión económica.</span>", "./images/recono-icon5.svg")
+                +card-seis("<span>Estuvimos en el Top 5 emisores, con mejores niveles de adopción del estándar de revelación en 2023</span>, ranking de emisor de valores IR que divulga la Bolsa de Valores de Colombia, gracias al diagnóstico que realiza en alianza con el CESA. ", "./images/recono-icon6.svg")
