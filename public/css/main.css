@@ -140,7 +140,7 @@ table {
 }
 @media (max-width: 1200px) {
   .wrapper-intern {
-    max-width: 40vw;
+    max-width: 75vw;
   }
   .wrapper-intern-70 {
     max-width: 90vw;
@@ -1386,6 +1386,12 @@ table {
 .nav-list .nav-item a {
   color: var(--color-primary);
 }
+.nav-list .nav-item:hover {
+  background-color: var(--hover-nav-color);
+}
+.nav-list .nav-item:hover a {
+  color: white;
+}
 
 .item-active {
   background-color: var(--hover-nav-color);
@@ -1405,16 +1411,13 @@ table {
   width: 100%;
   display: none;
 }
+.nav-container-dropdown .nav-list-dropdown .nav-item-dropdown a {
+  color: white;
+}
 
 .nav-list-dropdown {
   display: flex;
   flex-wrap: wrap;
-}
-.nav-list-dropdown .nav-item {
-  border-right: 1px solid black;
-}
-.nav-list-dropdown .nav-item a {
-  color: black;
 }
 
 .nav-item-dropdown {
@@ -1422,17 +1425,12 @@ table {
 }
 .nav-item-dropdown a {
   font-weight: 600;
+  color: white;
 }
 .nav-item-dropdown:first-child {
   border-left: 1px solid white;
 }
 
-.nav-list > .nav-item:hover {
-  background-color: var(--hover-nav-color);
-}
-.nav-list > .nav-item:hover a {
-  color: white;
-}
 .nav-list > .nav-item:hover .nav-container-dropdown {
   display: block;
 }
@@ -1463,18 +1461,21 @@ table {
 
 @media (min-width: 1201px) {
   /*   body {
-        background-color: lightgreen;
-    } */
+      background-color: lightgreen;
+  } */
   .nav-burguer {
     display: none;
   }
 }
 @media (max-width: 1200px) {
-  /*  body {
-       background-color: blue;
-   } */
   .nav-list {
     flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+  }
+  .nav-list .nav-item {
+    font-weight: 600;
   }
   .nav-list-item {
     width: 100%;
@@ -1482,20 +1483,16 @@ table {
   .nav-container-dropdown {
     position: static;
     padding-top: 0;
-    background-color: #e9e9e9;
+    background-color: #f7f7f7;
     display: block;
   }
   .nav-list-dropdown {
     flex-direction: column;
   }
-  .nav-list-dropdown .nav-item {
-    padding-left: 1rem;
+  .nav-container-dropdown .nav-list-dropdown .nav-item-dropdown a {
+    color: var(--color-primary);
+    font-weight: 400;
   }
-}
-@media (max-width: 500px) {
-  /* body {
-      background-color: red;
-  } */
 }
 .video-banner-container {
   display: flex;
