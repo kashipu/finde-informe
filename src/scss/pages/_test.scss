@@ -33,11 +33,18 @@
     display: block;
 }
 
+
 //Estilos sliders
 
 .cifras-item {
     display: none;
 }
 .cifras-item:first-child {
+    display: block;
+}
+.texto-box {
+    display: none;
+}
+.texto-box:first-child {
     display: block;
 }

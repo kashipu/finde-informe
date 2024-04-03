@@ -13,4 +13,5 @@ function mostrarCifras(selectorCards, selectorCifras) {
 document.addEventListener('DOMContentLoaded', function() {
   mostrarCifras('.card-uno', '.cifras-item');
   mostrarCifras('.card-dos', '.cifra-space-box');
+  mostrarCifras('.card-uno', '.texto-box');
 });

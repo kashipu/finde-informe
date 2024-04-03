@@ -1315,6 +1315,14 @@ table {
   display: block;
 }
 
+.texto-box {
+  display: none;
+}
+
+.texto-box:first-child {
+  display: block;
+}
+
 .header-top__ribbon {
   background-image: url("../images/senefatopok.png");
   background-repeat: no-repeat;
@@ -2484,6 +2492,7 @@ header {
 
 .slider-desarrollo-container {
   padding: 2rem;
+  padding-top: 4rem;
 }
 
 .slider-desarrollo-box {
@@ -2545,6 +2554,7 @@ header {
   }
   .slider-desarrollo-container {
     padding: 1.5rem;
+    padding-top: 4rem;
   }
 }
 .slider-planificacion {
