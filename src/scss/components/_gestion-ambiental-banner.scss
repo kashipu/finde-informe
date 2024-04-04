@@ -1,30 +1,148 @@
+.gestion-ambiental-banner-container {
+    background-image:radial-gradient(60% 50% at bottom, #b7d831 100%, #b7d831 100%, transparent 100%);
+    padding-bottom: 2rem;
+}
 .gestion-ambiental-buttons{
     display: flex;
-    border: 1px solid red;
-    justify-content: space-between;
-}
-.gestion-ambiental-contenedor {
-    border: 1px solid red;
-    height: 500px;
-}
-
-.gestion-ambiental-slide {
-    border: 1px solid green;
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
     justify-content: center;
     align-items: center;
-    p {
-        text-align: center;
-        color: black;
-        font-weight: 800;
-        font-size: 10rem;
+    gap: 4rem;
+    .ambiental-button {
+        background-color: #E9F3C1;
+        border-radius: 50%;
+        padding: 1.2rem;
+        img {
+            width: 250px;
+        }
+        &:hover {
+            background-color: #1e6f41;
+            img {
+                filter: brightness(0) saturate(100%) invert(76%) sepia(98%) saturate(340%) hue-rotate(17deg) brightness(89%) contrast(100%);
+            }
+        }
     }
 }
-.gestion-ambiental-slide {
+.slide-content {
+    background-color: #b7d831;
     display: none;
 }
-.gestion-ambiental-slide:first-child {
+.slide-content:first-child {
     display: block;
+}
+
+// Banner 1
+.banner1-gestion {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.banner1-item {
+    border-right: 2px dashed #1e6f41;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.8rem;
+    img {
+        width: 150px;
+    }
+}
+.banner1-item:last-child {
+    border: none;
+}
+.banner1-item-content {
+    text-align: center;
+    line-height: 1.3;
+    h3 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+        color: #2566af;
+        small {
+            font-size: 1.5rem;
+            display: block;
+        }
+    }
+    p {
+        margin-top: .5rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        span {
+            font-weight: 600;
+        }
+    }
+}
+.content-huella-carbono {
+    background-image: url("../images/background-gestion-ambiental1.svg");
+    background-repeat: repeat;
+    background-size: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+.content-arboles {
+    background-image: url("../images/background-gestion-ambiental2.svg");
+    background-size: 5%;
+    background-size: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+.number-box {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    text-align: center;
+    background-color: #E9F3C1;
+    border-radius: 3rem;
+    h3 {
+        font-size: 8rem;
+        display: block;
+        font-weight: 600;
+        color: #1e6f41;
+        line-height: 1;
+    }
+    p {
+        display: block;
+        font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 1201px) {}
+@media(max-width: 1200px) {
+    .gestion-ambiental-banner-container {
+        background-image:radial-gradient(200% 90% at bottom, #b7d831 100%, #b7d831 100%, transparent 100%);
+    }
+    .gestion-ambiental-buttons {
+        flex-direction: column;
+        .ambiental-button {
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .number-box {
+        padding: 2rem;
+        h3 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+    }
+    .content-arboles {
+        padding: 2rem;
+    }
+    .content-huella-carbono {
+        padding: 2rem;
+        background-size: 89px;
+    }
+    .banner1-item {
+        border: none;
+    }
+}
+@media(max-width: 500px) {
 }

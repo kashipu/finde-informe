@@ -1,19 +1,25 @@
 .gestion-ambiental-banner
-    .gestion-ambiental-container.wrapper
-        .gestion-ambiental-buttons
+    .gestion-ambiental-banner-container
+        .gestion-ambiental-buttons.wrapper
             .ambiental-button
-                a(href="")
-                    img(src='https://placehold.co/257x257', alt='')
+                    img(src='./images/gestion-ambiental-icon1.svg', alt='')
             .ambiental-button
-                a(href="")
-                    img(src='https://placehold.co/257x257', alt='')
+                    img(src='./images/gestion-ambiental-icon2.svg', alt='')
             .ambiental-button
-                a(href="")
-                    img(src='https://placehold.co/257x257', alt='')
-        .gestion-ambiental-contenedor
-            .gestion-ambiental-slide
-                p Slide 1
-            .gestion-ambiental-slide
-                p Slide 2
-            .gestion-ambiental-slide
-                p Slide 3
+                    img(src='./images/gestion-ambiental-icon3.svg', alt='')
+    .gestion-ambiental-content
+        .slide-content
+            include ../components/banner1-gestion-ambiental.pug
+        .slide-content
+            .content-huella-carbono
+                .content-box-margin
+                    .number-box
+                        h3 268
+                        p adquiridos para compensar el 100 % de nuestra huella de carbono.
+        .slide-content
+            .content-arboles
+                .content-box-margin
+                    .number-box
+                        h3 1000
+                        p por Findeter en Tenjo (Cundinamarca) y en el Amazonas, buscando generar nuevos puntos y pulmones verdes.
+
