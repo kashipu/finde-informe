@@ -1,0 +1,32 @@
+.productos-banner-container {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    background-color: #2d549d;
+    padding-bottom: 8rem;
+    padding-top: 4rem;
+    background-image:radial-gradient(70% 15% at bottom, #00acec 100%, #00acec 100%, transparent 100%);
+}
+.produtos-banner-title {
+    h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        margin-bottom: 2rem;
+    }
+}
+.productos-banner-box {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+.banner-item1 {
+    img {
+        width: 250px;
+    }
+}
+.banner-item2 {
+    img {
+        width: 700px;
+    }
+}

@@ -1,0 +1,18 @@
+extends ../layouts/base.pug
+block content
+    include ../components/header.pug
+    main.main-container
+        .global-container
+            .global-box.wrapper-intern
+                .global-title
+                    h1 Productos
+                .global-subtitle
+                    h2 Portafolio de productos y servicios
+        .productos-banner-container
+            .produtos-banner-title.wrapper
+                h3 Para cada sector ofrecemos los siguientes productos y servicios:
+            .productos-banner-box.wrapper
+                .banner-item1
+                     img(src='./images/productos-image2.svg', alt='')
+                .banner-item2
+                     img(src='./images/productos-image1.svg', alt='')
