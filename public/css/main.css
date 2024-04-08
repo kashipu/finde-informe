@@ -1231,49 +1231,117 @@ table {
 
 .finanzas1-box {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  margin-bottom: 6rem;
 }
 
 .finanzas1-text {
-  border: 1px solid red;
+  padding: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .finanzas1-grafico {
-  border: 1px solid red;
+  padding: 2rem;
+}
+.finanzas1-grafico img {
+  box-shadow: 0px 0px 20px 0px rgb(181, 181, 181);
+  border-radius: 1.5rem;
 }
 
 .finanzas-section2 {
-  border: 1px solid red;
+  background-color: #112d6a;
+  margin-top: 10rem;
 }
 
 .finanzas-box {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  position: relative;
+  top: -5rem;
 }
 
 .finanzas-section3 {
-  border: 1px solid red;
+  background-color: #2d549d;
 }
 
 .finanzas3-cards {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(4, 25%);
 }
 
 .finanzas3-item {
-  border: 1px solid red;
+  color: white;
+  line-height: 1.5;
+  border-left: 2px dashed #6e8eca;
   padding: 2rem;
+}
+.finanzas3-item:first-child {
+  border: none;
 }
 
 .finanzas3-image {
-  border: 1px solid red;
   text-align: center;
   padding: 2rem;
 }
 
+.finanzas-slider-item {
+  background-image: radial-gradient(100% 60% at top, #2d549d 100%, #2d549d 100%, transparent 100%);
+  display: none;
+}
+
+.finanzas-slider-item:first-child {
+  display: block;
+}
+
+.finanzas2-text {
+  padding: 1rem;
+  background-color: #112d6a;
+}
+.finanzas2-text p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0rem 2rem;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .finanzas1-box {
+    grid-template-columns: 1fr;
+  }
+  .finanzas1-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .finanzas1-grafico {
+    text-align: center;
+  }
+  .finanzas1-grafico img {
+    max-width: 600px;
+    width: 100%;
+  }
+  .finanzas-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  .finanzas3-cards {
+    grid-template-columns: 1fr;
+  }
+  .finanzas3-image {
+    padding: 1rem;
+  }
+  .finanzas3-image img {
+    width: 100%;
+  }
+  .finanzas-slider-item {
+    background-image: radial-gradient(200% 98% at top, #2d549d 100%, #2d549d 100%, transparent 100%);
+    display: none;
+  }
+}
 .botones {
   border: 1px solid red;
   display: flex;

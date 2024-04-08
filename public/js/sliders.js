@@ -15,4 +15,5 @@ document.addEventListener('DOMContentLoaded', function() {
   mostrarCifras('.card-dos', '.cifra-space-box');
   mostrarCifras('.card-uno', '.texto-box');
   mostrarCifras('.ambiental-button', '.slide-content');
+  mostrarCifras('.card-uno', '.finanzas-slider-item');
 });

@@ -4,7 +4,7 @@ block content
     include ../components/header.pug
     main.main-container
         .global-container
-            .global-box.wrapper
+            .global-box.wrapper-inter
                 .global-title
                     h1 Finanzas responsables
                 .global-text
@@ -13,26 +13,7 @@ block content
             .finanzas1-container
                 .finanzas1-box.wrapper
                     .finanzas1-text
-                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore tenetur corporis ea rerum natus magni. Commodi rerum quae eum. Ullam vel, quidem possimus ut nam cumque veniam? Quod, soluta cum?
+                        p El activo total se ubicó en COP14,78 billones, incrementándose en un 12,40 % frente al ejercicio anterior; el pasivo, por su parte, mostró una variación anual positiva del 12,34 % y cerró el año en COP13,22 billones, en tanto que el patrimonio se incrementó en 12,87 % situándose en COP1,56 billones.
                     .finanzas1-grafico
-                        img(src='https://placehold.co/478x590', alt='')
-        .finanzas-section2
-            .finanzas2-container
-                .finanzas-box.wrapper
-                    +card-uno
-                    +card-uno
-                    +card-uno
-            .finanzas2-text.wrapper
-                p Los indicadores de rentabilidad presentaron un desempeño superior al registrado en vigencias anteriores, derivado del óptimo desempeño alcanzado en materia operacional:
-        .finanzas-section3
-            .finanzas3-cards.wrapper
-                .finanzas3-item
-                    p El ROE (return on equity) presentó un resultado del 10,63 %, con un crecimiento de 414 puntos básicos frente a 2022, apalancado por los ingresos de intereses de cartera, inversiones y liquidez, ejecución de proyectos, y otros ingresos como los asociados a reintegros del Fondo Nacional de Garantías, y la recuperación de provisión de los “bonos agua”.
-                .finanzas3-item
-                    p El ebitda (Earnings Before Interest, Taxes, Depreciation and Amortization) tuvo una dinámica positiva gracias al comportamiento del margen financiero, que presentó una variación de COP167.433 millones de un año a otro, y equivalente a un aumento del 83,59 %.
-                .finanzas3-item
-                    p Conforme con lo dispuesto en la metodología Basilea III, la relación de solvencia presentó un resultado de 24,18 %, con un aumento de 18 puntos básicos (pb) respecto a los resultados obtenidos al cierre de 2022.
-                .finanzas3-item
-                    p El indicador de eficiencia registró un aumento de 15 pb respecto al mismo periodo de 2022, con un mejor desempeño frente a las expectativas trazadas, gracias al comportamiento de los activos productivos, los cuales crecieron un 10,14 % de un año a otro, lo que equivale a una variación de COP1.297.987 millones.
-            .finanzas3-image.wrapper
-                img(src='https://placehold.co/1100x492', alt='')
+                        img(src='./images/finanzas-grafico1.svg', alt='')
+        include ../components/finanzas-slider.pug
