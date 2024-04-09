@@ -102,6 +102,7 @@ table {
   text-align: center;
   font-weight: 500;
   color: #2d549d;
+  padding: 0rem 2rem;
 }
 
 .global-text {
@@ -174,6 +175,10 @@ table {
   .global-title h1 {
     margin-bottom: 0rem;
     font-size: 2rem;
+  }
+  .global-subtitle {
+    font-size: 1.5rem;
+    padding: 2rem;
   }
   .global-text {
     padding: 0rem;
@@ -1400,7 +1405,6 @@ table {
 
 .productos-banner-container {
   margin-top: 5rem;
-  margin-bottom: 2rem;
   background-color: #2d549d;
   padding-bottom: 8rem;
   padding-top: 4rem;
@@ -1429,6 +1433,49 @@ table {
   width: 700px;
 }
 
+@media (max-width: 1200px) {
+  .productos-banner-container {
+    background-image: radial-gradient(100% 12% at bottom, #00acec 100%, #00acec 100%, transparent 100%);
+  }
+  .produtos-banner-title {
+    padding: 1.5rem;
+  }
+  .produtos-banner-title h3 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  .productos-banner-box {
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+  }
+  .banner-item1 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .banner-item1 img {
+    max-width: 400px;
+    width: 100%;
+  }
+  .banner-item2 {
+    padding: 1rem;
+  }
+  .banner-item2 img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .banner-item1 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .banner-item1 img {
+    max-width: 200px;
+    width: 100%;
+  }
+}
 .header-top__ribbon {
   background-image: url("../images/senefatopok.png");
   background-repeat: no-repeat;
@@ -2727,12 +2774,12 @@ header {
 .slider-asistencia {
   margin-top: 5rem;
   margin-bottom: 4rem;
-  background-color: #2D549D;
 }
 
 .slider-asistencia-container {
   padding: 3rem;
   padding-bottom: 1rem;
+  background-color: #2D549D;
 }
 
 .slider-asistencia-item {
@@ -2749,11 +2796,19 @@ header {
 .asistencia-item-text {
   background-color: #00ACEC;
   color: white;
-  padding: 1.5rem;
+  padding: 0.8rem 1rem;
+  line-height: 1.3;
   text-align: center;
   font-weight: 600;
   font-size: 1.25rem;
   border-radius: 0rem 0rem 3rem 0rem;
+}
+
+.asistencia-textimage-box {
+  display: none;
+}
+.asistencia-textimage-box:first-child {
+  display: block;
 }
 
 .gestion-ambiental-banner-container {
@@ -2902,5 +2957,120 @@ header {
   .content-huella-carbono {
     padding: 2rem;
     background-size: 89px;
+  }
+}
+.productos-line-container {
+  background-color: #00acec;
+}
+
+.productos-line-foo {
+  height: 100px;
+  background-image: radial-gradient(60% 100% at top, #00acec 100%, #00acec 100%, transparent 100%);
+}
+
+.productos-line-box {
+  display: flex;
+  justify-content: center;
+}
+
+.line-box-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0rem;
+  width: 100%;
+  position: relative;
+}
+
+.productos-line-item {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 2rem 5rem;
+  border-right: 3px solid #b7d831;
+  position: relative;
+}
+.productos-line-item::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 60px;
+  right: 0px;
+  top: 60px;
+  height: 3px;
+  background-color: #b7d831;
+}
+
+.producto-item-title {
+  font-size: 1.25rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-align: right;
+}
+
+.producto-item-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  text-align: right;
+  color: white;
+}
+
+.producto-item-icon img {
+  width: 60px;
+}
+
+.productos-line-item:nth-child(even) {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  border-right: none;
+}
+.productos-line-item:nth-child(even)::after {
+  left: 0px;
+  top: 60px;
+  height: 3px;
+  background-color: #b7d831;
+}
+.productos-line-item:nth-child(even) .producto-item-text, .productos-line-item:nth-child(even) .producto-item-title {
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .line-box-wrapper {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .productos-line-item {
+    border-left: none;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: right;
+    border: none;
+  }
+  .productos-line-item::after {
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    background-color: #b7d831;
+  }
+  .producto-item-title {
+    text-align: left;
+  }
+  .producto-item-text {
+    text-align: left;
+  }
+  .productos-line-item:nth-child(even) {
+    flex-direction: column;
+    justify-content: flex-end;
+    border-right: none;
+  }
+  .productos-line-item:nth-child(even)::after {
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    background-color: #b7d831;
+  }
+  .productos-line-item:nth-child(even) .producto-item-text, .productos-line-item:nth-child(even) .producto-item-title {
+    text-align: left;
   }
 }

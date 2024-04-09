@@ -1,0 +1,9 @@
+mixin producto-item(title, text, img)
+    .productos-line-item
+        .producto-item-content
+            .producto-item-title
+                h2 !{title}
+            .producto-item-text
+                p !{text}
+        .producto-item-icon
+            img(src=img, alt='Icono ' + title, title='Icono ' + title)

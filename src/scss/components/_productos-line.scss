@@ -1,0 +1,112 @@
+.productos-line-container {
+    background-color: #00acec;
+}
+.productos-line-foo {
+    height: 100px;
+    background-image:radial-gradient(60% 100% at top, #00acec 100%, #00acec 100%, transparent 100%);
+}
+.productos-line-box {
+    display: flex;
+    justify-content: center;
+}
+.line-box-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;
+    width: 100%;
+    position: relative;
+}
+.productos-line-item {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding: 2rem 5rem;
+    border-right: 3px solid #b7d831;
+    position: relative;
+    &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        width: 60px;
+        right: 0px;
+        top: 60px;
+        height: 3px;
+        background-color: #b7d831;
+    }
+}
+.producto-item-title {
+    font-size: 1.25rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-align: right;
+}
+.producto-item-text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: right;
+    color: white;
+}
+.producto-item-icon {
+    img {
+        width: 60px;
+    }
+}
+.productos-line-item:nth-child(even) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    border-right: none;
+    &::after {
+        left: 0px;
+        top: 60px;
+        height: 3px;
+        background-color: #b7d831;
+    }
+    .producto-item-text, .producto-item-title {
+        text-align: left;
+    }
+}
+
+@media(min-width: 1201px){}
+@media(max-width: 1200px){
+    .line-box-wrapper {
+        padding: 2rem;
+        grid-template-columns: 1fr;
+    }
+    .productos-line-item {
+        border-left: none;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: right;
+        border: none;
+        &::after {
+            left: 0px;
+            top: 0px;
+            height:0px;
+            background-color: #b7d831;
+        }
+    }
+    .producto-item-title {
+        text-align: left;
+    }
+    .producto-item-text {
+        text-align: left;
+    }
+    .productos-line-item:nth-child(even) {
+        flex-direction: column;
+        justify-content: flex-end;
+        border-right: none;
+        &::after {
+            left: 0px;
+            top: 0px;
+            height:0px;
+            background-color: #b7d831;
+        }
+        .producto-item-text, .producto-item-title {
+            text-align: left;
+        }
+    }
+
+}
+@media(max-width: 500px){}
