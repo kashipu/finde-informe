@@ -9,21 +9,28 @@ block content
                 .global-text
                     p En 2023 desembolsamos COP3,89 billones, de los cuales COP2,42 billones corresponden a redescuento y COP1,47 billones a crédito directo.
         include ../components/financiacion-banner.pug
-        .financiacion-image-sectores.wrapper
-            .financiacion-image-overflow
-                img(src='https://placehold.co/1250x1100', alt='')
-        .financiacion-image-sectores.wrapper
-            .financiacion-image-overflow
-                img(src='https://placehold.co/1250x1100', alt='')
-        .financiacion-image-sectores.wrapper
-            .financiacion-image-overflow
-                img(src='https://placehold.co/600x583', alt='')
-                img(src='https://placehold.co/600x583', alt='')
+        .financiacion-sectores-container
+            .financiacion-sectores-box.wrapper
+                img(src='./images/financiacion-image1.svg' alt='')
+            .financiacion-desembolsos-container
+                .financiacion-desembolsos-box.wrapper
+                    .desembolsos-image
+                        img(src='./images/financiacion-image2.svg' alt='')
+                    .desembolsos-aside
+                        img(src='./images/financiacion-card1.svg' alt='')
+                        img(src='./images/financiacion-card2.svg' alt='')
+            .financiacion-desembolsos-graphs
+                .desembolsos-graphs-box.wrapper
+                    img(src='./images/financiacion-image3.svg' alt='')
+                    img(src='./images/financiacion-image4.svg' alt='')
         .financiacion-nuevas-lineas.wrapper
-            .nuevas-lineas-text
-                p Implementamos tres programas de financiación que han estado enfocados en la reactivación económica del país y en contribuir con el cumplimiento de los planes de desarrollo departamentales, distritales y municipales.
-            .nuevas-lineas-table
-                img(src='https://placehold.co/720x280', alt='')
+            .nuevas-lineas-title
+                h3 Nuevas líneas implementadas
+            .nuevas-lineas-content
+                .nuevas-lineas-text
+                    p Implementamos tres programas de financiación que han estado enfocados en la reactivación económica del país y en contribuir con el cumplimiento de los planes de desarrollo departamentales, distritales y municipales.
+                .nuevas-lineas-table
+                    img(src='./images/financiacion-table1.svg' alt='')
         .global-container
             .global-box.wrapper-intern
                 .global-title

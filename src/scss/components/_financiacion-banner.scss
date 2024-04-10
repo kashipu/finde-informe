@@ -6,7 +6,8 @@
 
 .financiacion-title {
     background-color: #1e6f41;
-    padding: 1rem;
+    padding: 1.2rem;
+
     p {
         font-size: 1.8rem;
         text-align: center;
@@ -19,8 +20,10 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: var(--green-500);
+
     .financiacion-image {
         padding: 2rem 0rem;
+
         img {
             width: 100%;
             object-fit: cover;
@@ -40,15 +43,20 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1rem;
+
     .cifra-icono {
+        padding: .5rem;
+
         img {
             width: 100%;
         }
     }
+
     .cifra-content {
         .cifra-text {
             h2 {
-                font-size: 1.875rem;
+                font-size: 1.8rem;
+                line-height: 1.2;
                 color: white;
                 font-weight: 600;
             }
@@ -71,18 +79,113 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    background-image:radial-gradient(60% 100% at top, #DBEC98 100%, #DBEC98 100%, transparent 100%);
+    background-image: radial-gradient(60% 100% at top, #DBEC98 100%, #DBEC98 100%, transparent 100%);
 }
-.number-box {
-    display: flex;
-    .number-icon {}
 
-    .number-body {
-        .body-title {
+.financiacion-number-box {
+    gap: 1rem;
 
+    .financiacion-number-icon {
+        img {
+            width: 170px;
         }
-        .body-text {
+    }
 
+    display: flex;
+}
+
+.financiacion-number-body {
+    .body-title {
+        font-size: 9.5rem;
+        font-weight: 700;
+        text-align: center;
+        color: #1e6f41;
+
+        span {
+            font-size: 2rem;
+            display: block;
+        }
+    }
+
+    .body-text {
+        text-align: center;
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+}
+.financiacion-image-overflow {
+    padding: 1.5rem;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+@media(min-width: 1201px) {}
+
+@media(max-width: 1200px) {
+    .financiacion-cifras {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .financiacion-text {
+        grid-template-columns: 1fr;
+    }
+
+    .financiacion-cifra {
+        .cifra-icono {
+            padding: 0rem;
+
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .financiacion-cifra {
+        grid-template-columns: 1fr;
+    }
+
+    .financiacion-text .financiacion-image {
+        padding: 0rem 0rem;
+    }
+
+    .financiacion-text {
+        grid-template-columns: 1fr;
+    }
+
+    .financiacion-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        background-image: radial-gradient(150% 100% at top, #DBEC98 100%, #DBEC98 100%, transparent 100%);
+    }
+
+    .financiacion-number-box {
+        flex-direction: column;
+        justify-content: center;
+
+        .financiacion-number-icon {
+            text-align: center;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        display: flex;
+    }
+
+    .financiacion-number-body {
+        .body-title {
+            font-size: 5rem;
         }
     }
 }
