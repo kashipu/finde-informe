@@ -1,11 +1,12 @@
-mixin card-tres(image, title, desc)
+mixin card-tres(image, title, desc, href)
     .card-tres-container
         .card-tres
             .card-tres-image
                 img(src=image, alt="", srcset="")
-            .card-tres-overlay
-            .card-tres-content
-                .card-tres-title
-                    p !{title}
-                .card-tres-text
-                    p=desc
+            a(href=href target="_blank")
+                .card-tres-overlay
+                .card-tres-content
+                    .card-tres-title
+                        p !{title}
+                    .card-tres-text
+                        p=desc

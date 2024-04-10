@@ -1,12 +1,13 @@
-mixin card-cuatro(image, icon, title, text)
+mixin card-cuatro(image, icon, title, text, href)
     .card-cuatro
         .card-cuatro-image
             img(src=image, alt="", srcset="")
-        .card-cuatro-overlay&attributes(attributes)
-        .card-cuatro-content
-            .card-cuatro-icon
-                img(src=icon, alt="", srcset="")
-            .card-cuatro-title
-                p=title
-            .card-cuatro-text
-                p=text
+        a(href=href target="_blank")
+            .card-cuatro-overlay&attributes(attributes)
+            .card-cuatro-content
+                .card-cuatro-icon
+                    img(src=icon, alt="", srcset="")
+                .card-cuatro-title
+                    p=title
+                .card-cuatro-text
+                    p=text
