@@ -1083,20 +1083,6 @@ table {
   object-fit: cover;
 }
 
-.asistencia-textimage-box {
-  border: 1px solid red;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.image-box img {
-  width: 100%;
-  object-fit: cover;
-  aspect-ratio: 5/3;
-}
-
 .economia-section1 {
   background-color: #43a756;
   margin-top: 6rem;
@@ -3094,6 +3080,14 @@ header {
   padding: 1.5rem;
 }
 
+.slider-asistencia-item-active .asistencia-item-image {
+  filter: drop-shadow(5);
+}
+.slider-asistencia-item-active .asistencia-item-text {
+  background-color: white;
+  color: #00ACEC;
+}
+
 .asistencia-item-image img {
   width: 100%;
   aspect-ratio: 2/1.8;
@@ -3112,6 +3106,36 @@ header {
   border-radius: 0rem 0rem 3rem 0rem;
 }
 
+.asistencia-textimage-container {
+  padding: 1rem;
+}
+
+.textimage-box-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+}
+.textimage-box-content .text-box {
+  padding: 2rem;
+}
+.textimage-box-content .text-box span {
+  display: block;
+  color: #2D549D;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.textimage-box-content .text-box p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.image-box img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 5/3;
+}
+
 .asistencia-textimage-box {
   display: none;
 }
@@ -3119,6 +3143,14 @@ header {
   display: block;
 }
 
+@media (max-width: 1200px) {
+  .asistencia-box, .textimage-box-content {
+    grid-template-columns: 1fr;
+  }
+  .textimage-box-content {
+    padding: 0rem;
+  }
+}
 .gestion-ambiental-banner-container {
   background-image: radial-gradient(60% 50% at bottom, #b7d831 100%, #b7d831 100%, transparent 100%);
   padding-bottom: 2rem;

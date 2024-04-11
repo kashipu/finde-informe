@@ -17,3 +17,5 @@ block content
                 .asistencia-image
                     img(src='./images/asistencia-image1.jpg', alt='')
         include ../components/slider-asistencia.pug
+block scripts
+    script mostrarCifras('.slider-asistencia-item', '.asistencia-textimage-box', "slider-asistencia-item-active");
