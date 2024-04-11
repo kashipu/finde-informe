@@ -17,6 +17,14 @@
     justify-content: center;
 }
 .header-logo-image {
+    a {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            max-width: 200px;
+        }
+    }
     width: 100%;
     display: flex;
     justify-content: flex-end;

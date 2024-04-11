@@ -1167,6 +1167,9 @@ table {
   margin-bottom: 2rem;
 }
 
+.economia3-img {
+  padding: 2rem;
+}
 .economia3-img img {
   width: 100%;
   aspect-ratio: 2/1.5;
@@ -1191,6 +1194,39 @@ table {
   display: flex;
   justify-content: center;
 }
+.economia4-box .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+.economia4-box .slick-prev::before, .economia4-box .slick-next::before {
+  color: #1e6f41;
+}
+.economia4-box .card-uno {
+  background-color: #DAEDDD;
+}
+.economia4-box .card-uno .card-title p {
+  color: #43a756;
+}
+.economia4-box .card-uno:hover {
+  background-color: #43a756;
+}
+.economia4-box .card-uno .card-uno-icon-arrow .arrow-back {
+  fill: #43a756;
+}
+.economia4-box .card-uno-active-green {
+  background-color: #1e6f41;
+}
+.economia4-box .card-uno-active-green .card-title p {
+  color: white;
+}
+
+.economia5-container {
+  display: none;
+}
+
+.economia5-container:first-child {
+  display: block;
+}
 
 .economia5-title {
   padding: 2rem;
@@ -1202,12 +1238,13 @@ table {
 
 .economia5-box {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   align-items: center;
 }
 
 .economia5-text {
   padding: 2rem;
+  text-align: center;
 }
 .economia5-text p {
   margin-bottom: 2rem;
@@ -1217,6 +1254,8 @@ table {
   margin-bottom: 2rem;
   display: block;
   font-size: 1.8rem;
+  color: #1e6f41;
+  font-weight: 600;
 }
 
 .economia5-img {
@@ -1228,6 +1267,24 @@ table {
   object-fit: cover;
 }
 
+@media (max-width: 1200px) {
+  .economia1-box {
+    grid-template-columns: 1fr;
+  }
+  .economia-section2 {
+    padding: 0rem;
+    background-image: radial-gradient(300% 100% at top, #1e6f41 100%, #1e6f41 100%, transparent 100%);
+  }
+  .economia2-item {
+    border: none;
+  }
+  .economia2-box {
+    grid-template-columns: 1fr;
+  }
+  .economia3-box, .economia5-box {
+    grid-template-columns: 1fr;
+  }
+}
 .finanzas1-box {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
@@ -1696,6 +1753,14 @@ table {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+.header-logo-image a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-logo-image a img {
+  max-width: 200px;
 }
 .header-logo-image img {
   max-width: 200px;

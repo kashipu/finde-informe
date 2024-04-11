@@ -2,9 +2,11 @@
     background-color: #43a756;
     margin-top: 6rem;
 }
+
 .economia1-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     .economia1-text {
         padding: 2rem;
         line-height: 1.5;
@@ -12,12 +14,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         p {
             font-weight: 400;
             font-size: 1.125rem;
             margin-bottom: 1.5rem;
         }
     }
+
     .economia1-img {
         img {
             display: flex;
@@ -27,15 +31,18 @@
         }
     }
 }
+
 .economia-section2 {
-    background-image:radial-gradient(80% 100% at top, #1e6f41 100%, #1e6f41 100%, transparent 100%);
+    background-image: radial-gradient(80% 100% at top, #1e6f41 100%, #1e6f41 100%, transparent 100%);
     padding: 5rem;
     margin-bottom: 5rem;
 }
+
 .economia2-box {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
+
 // Economia item
 .economia2-item {
     padding: 2rem;
@@ -43,39 +50,48 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+
 .economia2-item-image {
     align-self: self-end;
     text-align: center;
     margin-bottom: 1rem;
+
     img {
         max-width: 120px;
         width: 100%;
     }
 }
+
 .economia2-item-text {
     font-size: 1.125rem;
     line-height: 1.3;
     color: white;
     text-align: center;
 }
+
 .economia-section3 {
     margin-bottom: 5rem;
 }
+
 .economia3-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 .economia3-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 3rem;
+
     p {
         line-height: 1.5;
         margin-bottom: 2rem;
     }
 }
+
 .economia3-img {
+    padding: 2rem;
     img {
         width: 100%;
         aspect-ratio: 2/1.5;
@@ -83,26 +99,66 @@
     }
 }
 
-.economia-section4 {
-}
 .economia4-title {
     text-align: center;
     margin-bottom: 2rem;
+
     h2 {
         font-size: 2.25rem;
         color: var(--color-secondary);
     }
 }
+
 .economia4-container {
     padding: 3rem;
 }
+
 .economia4-box {
     margin-bottom: 5rem;
     display: flex;
     justify-content: center;
+    .slick-slide {
+        display: flex;
+        justify-content: center;
+    }
+    .slick-prev::before, .slick-next::before {
+        color: #1e6f41;
+    }
+    .card-uno {
+        background-color: #DAEDDD;
+        .card-title {
+            p {
+                color: #43a756;
+            }
+        }
+        &:hover {
+            background-color: #43a756;
+        }
+        .card-uno-icon-arrow {
+            .arrow-back {
+                fill: #43a756;
+            }
+        }
+    }
+    .card-uno-active-green {
+        background-color: #1e6f41;
+        .card-title {
+            p {
+                color: white;
+            }
+        }
+    }
 }
-.economia-section5 {
+
+.economia5-container {
+    display: none;
 }
+
+.economia5-container:first-child {
+    display: block;
+}
+
+
 .economia5-title {
     padding: 2rem;
     text-align: center;
@@ -110,28 +166,56 @@
     color: #43a756;
     font-weight: 500;
 }
+
 .economia5-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     align-items: center;
 }
+
 .economia5-text {
     padding: 2rem;
+    text-align: center;
     p {
         margin-bottom: 2rem;
         line-height: 1.5;
     }
+
     span {
         margin-bottom: 2rem;
         display: block;
         font-size: 1.8rem;
+        color: #1e6f41;
+        font-weight: 600;
     }
 }
+
 .economia5-img {
     padding: 2rem;
+
     img {
         width: 100%;
         aspect-ratio: 5/3;
         object-fit: cover;
     }
 }
+@media(min-width: 1201px) {}
+@media(max-width: 1200px) {
+    .economia1-box {
+        grid-template-columns: 1fr;
+    }
+    .economia-section2 {
+        padding: 0rem;
+        background-image: radial-gradient(300% 100% at top, #1e6f41 100%, #1e6f41 100%, transparent 100%);
+    }
+    .economia2-item {
+        border: none;
+    }
+    .economia2-box {
+        grid-template-columns: 1fr;
+    }
+    .economia3-box, .economia5-box {
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 500px) {}
