@@ -22,3 +22,14 @@
         background-color: #00acec;
     }
 }
+.card-dos-active {
+    background-color: #01739c;
+    .card-title {
+        img {
+            filter: brightness(0%) invert(100%);
+        }
+        p {
+            color: white;
+        }
+    }
+}

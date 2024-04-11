@@ -36,6 +36,14 @@
     }
 
 }
+.card-uno-active {
+    background-color: #2D549D;
+    .card-title {
+        p {
+            color: white;
+        }
+    }
+}
 .card-uno-box {
     padding: 2rem;
 }

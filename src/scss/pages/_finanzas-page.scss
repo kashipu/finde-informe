@@ -36,7 +36,7 @@
 }
 .finanzas3-cards {
     display: grid;
-    grid-template-columns: repeat(4,25%);
+    grid-template-columns: repeat(auto-fit, minmax(25%,1fr));
 }
 .finanzas3-item {
     color: white;
@@ -50,7 +50,33 @@
 .finanzas3-image {
     text-align: center;
     padding: 2rem;
+    .wrapper {
+        img {
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 12/5;
+        }
+    }
 }
+.finanzas2-text {
+    .wrapper{
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+}
+.finanzas3-table {
+    background-image:radial-gradient(100% 100% at top, #2d549d 100%, #2d549d 100%, transparent 100%);
+    padding-bottom: 10rem;
+    img {
+        width: 100%;
+    }
+}
+.finanzas3-table-box {
+    padding: 3rem;
+}
+
+
 .finanzas-slider-item {
     background-image:radial-gradient(100% 60% at top, #2d549d 100%, #2d549d 100%, transparent 100%);
     display: none;

@@ -1282,7 +1282,7 @@ table {
 
 .finanzas3-cards {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
 }
 
 .finanzas3-item {
@@ -1298,6 +1298,27 @@ table {
 .finanzas3-image {
   text-align: center;
   padding: 2rem;
+}
+.finanzas3-image .wrapper img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 12/5;
+}
+
+.finanzas2-text .wrapper p {
+  margin-bottom: 2rem;
+}
+
+.finanzas3-table {
+  background-image: radial-gradient(100% 100% at top, #2d549d 100%, #2d549d 100%, transparent 100%);
+  padding-bottom: 10rem;
+}
+.finanzas3-table img {
+  width: 100%;
+}
+
+.finanzas3-table-box {
+  padding: 3rem;
 }
 
 .finanzas-slider-item {
@@ -1963,6 +1984,13 @@ table {
   color: white;
 }
 
+.card-uno-active {
+  background-color: #2D549D;
+}
+.card-uno-active .card-title p {
+  color: white;
+}
+
 .card-uno-box {
   padding: 2rem;
 }
@@ -2000,6 +2028,16 @@ table {
   filter: brightness(0%) invert(100%);
 }
 .card-dos:hover .card-title p {
+  color: white;
+}
+
+.card-dos-active {
+  background-color: #01739c;
+}
+.card-dos-active .card-title img {
+  filter: brightness(0%) invert(100%);
+}
+.card-dos-active .card-title p {
   color: white;
 }
 
