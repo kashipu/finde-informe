@@ -2,6 +2,9 @@ extends ../layouts/base.pug
 include ../components/card-tres.pug
 include ../components/card-cuatro.pug
 include ../components/video-banner.pug
+include ../components/image-banner.pug
+block title
+    title Inicio | Informe de Gestión y sostenibilidad 2023
 block content
     include ../components/header-home.pug
     main.main-container
@@ -38,11 +41,11 @@ block content
             .cards-container-overlay
             .cards-container-box
                 .cards-container-slick
-                    +card-tres("./images/desarrollo-slider1.png", "Ejes de sostenibilidad", "Promovemos el equilibrio social, económico y ambiental de nuestra operación.")
-                    +card-tres("./images/desarrollo-slider2.png", "Responsabilidad social", "Potenciamos el impacto social de nuestros proyectos.")
-                    +card-tres("./images/desarrollo-slider3.png", "Gestión <br> ambiental", "Garantizamos la implementación y mantenimiento de la política ambiental.")
+                    +card-tres("./images/desarrollo-slider1.png", "Ejes de sostenibilidad", "Promovemos el equilibrio social, económico y ambiental de nuestra operación.", "./ejes-sostenibilidad.html")
+                    +card-tres("./images/desarrollo-slider2.png", "Responsabilidad social", "Potenciamos el impacto social de nuestros proyectos.", "./responsabilidad-social.html")
+                    +card-tres("./images/desarrollo-slider3.png", "Gestión <br> ambiental", "Garantizamos la implementación y mantenimiento de la política ambiental.", "./gestion-ambiental.html")
         .section-impacto
             include ../components/section-impacto.pug
-        +video-banner('Seguiremos contribuyendo al desarrollo de la infraestructura social del país y aumentaremos nuestra cobertura en los municipios de categorías 3, 4, 5 y 6.', 'zN_Er1QubuY', 'Ver más', '#', true)
+        +image-banner('Seguiremos contribuyendo al desarrollo de la infraestructura social del país y aumentaremos nuestra cobertura en los municipios de categorías 3, 4, 5 y 6.', './images/image-perspectivas.png', 'Ver más', './perspectivas-2024.html', true)
 block scripts
     script activeLink(0)

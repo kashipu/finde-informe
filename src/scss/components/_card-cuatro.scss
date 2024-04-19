@@ -2,6 +2,11 @@
     position: relative;
     min-width: 320px;
     width: 100%;
+    &:hover {
+        .card-cuatro-overlay {
+            opacity: .4;
+        }
+    }
 }
 .card-cuatro-image {
     position: relative;

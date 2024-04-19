@@ -1,0 +1,9 @@
+mixin image-banner(text, image, textbtn, linkbtn, viewButton)
+    section.video-banner-container
+        .video-banner
+            .video-text
+                p&attributes(attributes)=text
+                if viewButton
+                    a(href=linkbtn target="_blank")=textbtn
+            .video-embed
+                img(src=image, alt="")

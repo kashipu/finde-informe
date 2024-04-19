@@ -39,6 +39,8 @@
     img {
         width: 100%;
         object-fit: contain;
+        display: flex;
+
     }
 }
 @media(min-width: 1201px) {}

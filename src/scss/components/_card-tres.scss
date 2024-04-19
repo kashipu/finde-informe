@@ -7,6 +7,12 @@
     width: 290px;
     height: 338px;
     position: relative;
+    &:hover {
+        .card-tres-overlay {
+            background: transparent;
+            background: linear-gradient(0deg, rgba(17,45,106,1) 0%, rgba(44, 81, 160, 0.628) 35%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
 }
 .card-tres-image {
     position: relative;
@@ -53,7 +59,4 @@
         line-height: 1.2;
         align-self: start;
     }
-}
-@media(max-width: 500px) {
-
 }
