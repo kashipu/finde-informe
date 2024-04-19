@@ -168,3 +168,16 @@ $('.cards-container-slick').slick({
       }
     ]
   });
+
+
+
+  const mainNav = document.querySelectorAll(".nav-item")
+  const subNav = document.querySelectorAll(".nav-item-dropdown")
+
+  console.log(mainNav)
+  console.log(subNav)
+
+  const activeLink = (main, sub) => {
+      mainNav[main].classList.add("item-active")
+      subNav[sub].classList.add("item-dropdown-active")
+  }

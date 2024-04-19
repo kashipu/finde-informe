@@ -6,7 +6,7 @@ block content
     include ../components/header-home.pug
     main.main-container
         .download-container
-            a(href="" target="_blank")
+            a(href="./pdf/informe-findeter-2023.pdf" target="_blank")
                 .download-button
                     .icon-download
                         img(src="./images/download-icon.svg", alt="")
@@ -15,7 +15,7 @@ block content
         .welcome-banner
             .welcome-title.wrapper
                 h1.color1 Bienvenidos al informe
-            +video-banner('2023 ha sido un año de resultados históricos para Findeter. Nuestro presidente, Juan Carlos Muñiz Pacheco, habla de los principales logros de esta gestión.', 'zN5ENIpBsSE', 'Ver más', '#', true)
+            +video-banner('2023 ha sido un año de resultados históricos para Findeter. Nuestro presidente, Juan Carlos Muñiz Pacheco, habla de los principales logros de esta gestión.', 'rxKMFQ2OeFw', 'Ver más', 'https://www.youtube.com/watch?v=rxKMFQ2OeFw', true)
         .section-destacados
             .title
                 h2.section-title.color1 Hechos destacados
@@ -44,3 +44,5 @@ block content
         .section-impacto
             include ../components/section-impacto.pug
         +video-banner('Seguiremos contribuyendo al desarrollo de la infraestructura social del país y aumentaremos nuestra cobertura en los municipios de categorías 3, 4, 5 y 6.', 'zN_Er1QubuY', 'Ver más', '#', true)
+block scripts
+    script activeLink(0)
