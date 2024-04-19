@@ -1,13 +1,16 @@
 extends ../layouts/base.pug
+block title
+    title Gestión ambiental | Informe de Gestión y sostenibilidad 2023
 block content
     include ../components/header.pug
     main.main-container
         .global-container
             .global-box.wrapper-intern
                 .global-title
-                    h1 Gestión Ambiental
+                    h1 Gestión ambiental
                 .global-text
                     p Por medio de nuestro sistema de gestión ambiental, certificado con la norma 14001:2015, hemos garantizado la implementación y mantenimiento de la política ambiental de la entidad y salvaguardamos los aspectos e impactos ambientales derivados de la operación.
         include ../components/gestion-ambiental-banner.pug
 block scripts
-    script activeLink(4,10)
+    script mostrarCifras('.ambiental-button', '.slide-content', "ambiental-button-active");
+        | activeLink(4,10)

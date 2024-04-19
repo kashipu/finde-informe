@@ -654,6 +654,15 @@ table {
   justify-content: center;
 }
 
+.directivos-cta {
+  text-align: center;
+}
+.directivos-cta a {
+  margin-left: 0.2rem;
+  color: #2d549d;
+  font-weight: 600;
+}
+
 @media (max-width: 500px) {
   .directivos-subtitle h2 {
     font-size: 1.5rem;
@@ -792,6 +801,9 @@ table {
   padding: 1.125rem;
   line-height: 1.5;
   color: var(--white);
+}
+.section2-item p em {
+  font-style: italic;
 }
 
 .innovacion-section3 {
@@ -1333,6 +1345,13 @@ table {
   line-height: 1.5;
   border-left: 2px dashed #6e8eca;
   padding: 2rem;
+}
+.finanzas3-item p {
+  margin-bottom: 1rem;
+}
+.finanzas3-item p span {
+  font-weight: 700;
+  text-decoration: underline;
 }
 .finanzas3-item:first-child {
   border: none;
@@ -2376,6 +2395,9 @@ table {
   color: #2566af;
   font-weight: 600;
 }
+.card-seis-text p em {
+  font-style: italic;
+}
 
 footer {
   margin-top: 5rem;
@@ -3159,6 +3181,7 @@ header {
 
 .slider-asistencia-item {
   padding: 1.5rem;
+  cursor: pointer;
 }
 
 .slider-asistencia-item-active .asistencia-item-image {
@@ -3247,6 +3270,7 @@ header {
   background-color: #E9F3C1;
   border-radius: 50%;
   padding: 1.2rem;
+  cursor: pointer;
 }
 .gestion-ambiental-buttons .ambiental-button img {
   width: 250px;
@@ -3351,6 +3375,13 @@ header {
 .number-box p {
   display: block;
   font-size: 1.8rem;
+}
+
+.gestion-ambiental-buttons .ambiental-button-active {
+  background-color: #1e6f41;
+}
+.gestion-ambiental-buttons .ambiental-button-active img {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(98%) saturate(340%) hue-rotate(17deg) brightness(89%) contrast(100%);
 }
 
 @media (max-width: 1200px) {

@@ -43,6 +43,13 @@
     line-height: 1.5;
     border-left: 2px dashed #6e8eca;
     padding: 2rem;
+    p {
+        margin-bottom: 1rem;
+        span {
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    }
     &:first-child{
         border: none;
     }

@@ -1,31 +1,38 @@
 .gestion-ambiental-banner-container {
-    background-image:radial-gradient(60% 50% at bottom, #b7d831 100%, #b7d831 100%, transparent 100%);
+    background-image: radial-gradient(60% 50% at bottom, #b7d831 100%, #b7d831 100%, transparent 100%);
     padding-bottom: 2rem;
 }
-.gestion-ambiental-buttons{
+
+.gestion-ambiental-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
+
     .ambiental-button {
         background-color: #E9F3C1;
         border-radius: 50%;
         padding: 1.2rem;
+        cursor: pointer;
         img {
             width: 250px;
         }
+
         &:hover {
             background-color: #1e6f41;
+
             img {
                 filter: brightness(0) saturate(100%) invert(76%) sepia(98%) saturate(340%) hue-rotate(17deg) brightness(89%) contrast(100%);
             }
         }
     }
 }
+
 .slide-content {
     background-color: #b7d831;
     display: none;
 }
+
 .slide-content:first-child {
     display: block;
 }
@@ -35,6 +42,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+
 .banner1-item {
     border-right: 2px dashed #1e6f41;
     display: flex;
@@ -42,36 +50,44 @@
     flex-direction: column;
     justify-content: center;
     padding: 1.8rem;
+
     img {
         width: 150px;
     }
 }
+
 .banner1-item:last-child {
     border: none;
 }
+
 .banner1-item-content {
     text-align: center;
     line-height: 1.3;
+
     h3 {
         font-size: 3.5rem;
         font-weight: 600;
         text-align: center;
         display: block;
         color: #2566af;
+
         small {
             font-size: 1.5rem;
             display: block;
         }
     }
+
     p {
         margin-top: .5rem;
         font-size: 1.2rem;
         font-weight: 300;
+
         span {
             font-weight: 600;
         }
     }
 }
+
 .content-huella-carbono {
     background-image: url("../images/background-gestion-ambiental1.svg");
     background-repeat: repeat;
@@ -80,6 +96,7 @@
     justify-content: center;
     padding: 5rem;
 }
+
 .content-arboles {
     background-image: url("../images/background-gestion-ambiental2.svg");
     background-size: 5%;
@@ -88,6 +105,7 @@
     justify-content: center;
     padding: 5rem;
 }
+
 .number-box {
     padding: 3rem;
     display: flex;
@@ -98,6 +116,7 @@
     text-align: center;
     background-color: #E9F3C1;
     border-radius: 3rem;
+
     h3 {
         font-size: 8rem;
         display: block;
@@ -105,41 +124,57 @@
         color: #1e6f41;
         line-height: 1;
     }
+
     p {
         display: block;
         font-size: 1.8rem;
     }
 }
 
+.gestion-ambiental-buttons .ambiental-button-active {
+    background-color: #1e6f41;
+    img {
+        filter: brightness(0) saturate(100%) invert(76%) sepia(98%) saturate(340%) hue-rotate(17deg) brightness(89%) contrast(100%);
+    }
+}
+
 @media(min-width: 1201px) {}
+
 @media(max-width: 1200px) {
     .gestion-ambiental-banner-container {
-        background-image:radial-gradient(200% 90% at bottom, #b7d831 100%, #b7d831 100%, transparent 100%);
+        background-image: radial-gradient(200% 90% at bottom, #b7d831 100%, #b7d831 100%, transparent 100%);
     }
+
     .gestion-ambiental-buttons {
         flex-direction: column;
+
         .ambiental-button {
             img {
                 width: 200px;
             }
         }
     }
+
     .number-box {
         padding: 2rem;
+
         h3 {
             font-size: 4rem;
         }
+
         p {
             font-size: 1.1rem;
         }
     }
+
     .content-arboles {
         padding: 2rem;
     }
+
     .content-huella-carbono {
         padding: 2rem;
         background-size: 89px;
     }
 }
-@media(max-width: 500px) {
-}
+
+@media(max-width: 500px) {}

@@ -1,5 +1,7 @@
 extends ../layouts/base.pug
 include ../components/slider-desarrollo-item.pug
+block title
+    title Ejes de sostenibilidad | Informe de Gestión y sostenibilidad 2023
 block content
     include ../components/header.pug
     main.main-container
@@ -14,7 +16,7 @@ block content
                 .slider-desarrollo-box.wrapper-intern
                     +desarrollo-item("./images/eje-sostenibilidad-slider1.jpg", "<span>Transferencia de capacidades hacia entidades territoriales:</span>  aprovechamos nuestro conocimiento y experiencia buscando diseñar programas que garanticen su gestión y transferencia hacia los grupos de interés que impactamos. Todo esto mediante una estrategia de educación en habilidades técnicas.")
                     +desarrollo-item("./images/eje-sostenibilidad-slider2.jpg", "<span>Medición de impactos ambientales, sociales y económicos:</span> desplegamos nuestro modelo de medición de rentabilidad social actual, en el que cuantificamos el impacto social, ambiental y económico de nuestra operación.")
-                    +desarrollo-item("./images/eje-sostenibilidad-slider3.jpg", "<span>Finanzas responsables:</span>  construimos alternativas de inversión que garanticen un flujo de capital por medio de una economía sostenible, alineados con los principios ambientales, sociales y de gobernanza - ASG.")
+                    +desarrollo-item("./images/eje-sostenibilidad-slider3.jpg", "<span>Finanzas responsables:</span>  construimos alternativas de inversión que garanticen un flujo de capital por medio de una economía sostenible, alineados con los principios ambientales, sociales y de gobernanza (ASG).")
                     +desarrollo-item("./images/eje-sostenibilidad-slider4.jpg", "<span>Infraestructura social:</span>  acompañamos el desarrollo de proyectos que mejoran la calidad de vida de los territorios del país con nuestra gestión diaria.")
                     +desarrollo-item("./images/eje-sostenibilidad-slider5.jpg", "<span>Estrategia de relacionamiento:</span>creamos espacios con nuestros grupos de interés para conocer sus necesidades y construir de manera conjunta nuevos programas, productos o estrategias que fortalezcan los territorios colombianos.")
 block scripts
