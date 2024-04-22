@@ -47,8 +47,31 @@ block content
                             include ../components/mapa-colombia.pug
                     .proyectos-slider
                         include ../components/proyectos-slider-item.pug
-                    .proyectos-buttons
-                        p hola mundo
+                .proyectos-buttons.wrapper
+                    .button-map(onclick="botonActive(0)")
+                        .button-pointer
+                        .button-text-map
+                            p Bogotá
+                    .button-map(onclick="botonActive(2)")
+                        .button-pointer
+                        .button-text-map
+                            p Bolivar
+                    .button-map(onclick="botonActive(3)")
+                        .button-pointer
+                        .button-text-map
+                            p Atlántico
+                    .button-map(onclick="botonActive(1)")
+                        .button-pointer
+                        .button-text-map
+                            p Antioquia
+                    .button-map(onclick="botonActive(4)")
+                        .button-pointer
+                        .button-text-map
+                            p Quindio
+                    .button-map(onclick="botonActive(5)")
+                        .button-pointer
+                        .button-text-map
+                            p Cundinamarca
 block scripts
     script activeLink(5,13)
     script(src="./js/mapa-data.js")

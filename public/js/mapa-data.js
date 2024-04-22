@@ -1,7 +1,9 @@
 const contenedorCards = document.querySelectorAll(".proyectos-slider-item")
 const departamentosMap = document.querySelectorAll(".color-dep")
+const botonesMap = document.querySelectorAll(".button-map")
 console.log(contenedorCards)
 console.log(departamentosMap)
+console.log(botonesMap)
 
 // Función para manejar el clic en los departamentosMap
 function handleClickDepartamento(event) {
@@ -14,7 +16,6 @@ function handleClickDepartamento(event) {
 
     // Obtener el índice del departamento clicado
     const index = Array.from(departamentosMap).indexOf(event.target);
-
     // Ocultar todas las tarjetas
     contenedorCards.forEach(tarjeta => {
       tarjeta.style.display = 'none';
@@ -27,3 +28,14 @@ function handleClickDepartamento(event) {
   departamentosMap.forEach(departamento => {
     departamento.addEventListener('click', handleClickDepartamento);
   });
+
+  function botonActive (index) {
+    departamentosMap.forEach(departamento => {
+      departamento.classList.remove('dep-active');
+    });
+    departamentosMap[index].classList.add('dep-active')
+    contenedorCards.forEach(tarjeta => {
+      tarjeta.style.display = 'none';
+    });
+    contenedorCards[index].style.display = 'block';
+  }

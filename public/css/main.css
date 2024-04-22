@@ -1714,6 +1714,32 @@ table {
   border: 1px solid red;
 }
 
+.proyectos-buttons {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button-map {
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.button-map .button-pointer {
+  padding: 1rem;
+  border-radius: 5rem;
+  background-color: #2566af;
+}
+.button-map .button-text-map p {
+  color: #2566af;
+}
+.button-map:hover .button-pointer {
+  background-color: #5da9ff;
+}
+
 @media (max-width: 1200px) {
   .financiacion-sectores-box {
     padding: 1rem;
@@ -1761,6 +1787,10 @@ table {
   }
 }
 @media (max-width: 500px) {
+  .proyectos-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .proyectos-slider-item-title h3 {
     font-size: 1.5rem;
   }
@@ -1779,12 +1809,13 @@ table {
 
 .header-logo-finde {
   background-color: var(--color-primary);
-  padding: 1.2rem;
+  padding: 6rem 1.5rem 1.5rem 0rem;
   display: flex;
   justify-content: center;
 }
 
 .header-logo-image {
+  max-width: 1000px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -1801,6 +1832,11 @@ table {
   max-width: 200px;
 }
 
+@media (max-width: 1200px) {
+  .header-logo-finde {
+    padding: 1.5rem 1.5rem 1.5rem 0rem;
+  }
+}
 .nav-main {
   position: relative;
   z-index: 10;
@@ -2505,6 +2541,7 @@ header {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  padding-top: 2rem;
 }
 .header-logo img {
   width: 250px;

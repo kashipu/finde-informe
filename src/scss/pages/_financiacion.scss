@@ -133,6 +133,34 @@
 }
 
 
+.proyectos-buttons {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.button-map {
+    cursor: pointer;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    .button-pointer {
+        padding: 1rem;
+        border-radius: 5rem;
+        background-color: #2566af;
+    }
+    .button-text-map {
+        p {
+            color: #2566af;
+        }
+    }
+    &:hover {
+        .button-pointer {
+            background-color: #5da9ff;
+        }
+    }
+}
 
 
 
@@ -190,6 +218,10 @@
     }
 }
 @media(max-width: 500px) {
+    .proyectos-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     .proyectos-slider-item-title {
         h3 {
             font-size: 1.5rem;

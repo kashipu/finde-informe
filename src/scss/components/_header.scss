@@ -12,11 +12,12 @@
 }
 .header-logo-finde {
     background-color: var(--color-primary);
-    padding: 1.2rem;
+    padding: 6rem 1.5rem 1.5rem 0rem;
     display: flex;
     justify-content: center;
 }
 .header-logo-image {
+    max-width: 1000px;
     a {
         width: 100%;
         display: flex;
@@ -30,5 +31,10 @@
     justify-content: flex-end;
     img {
         max-width: 200px;
+    }
+}
+@media (max-width: 1200px) {
+    .header-logo-finde {
+        padding: 1.5rem 1.5rem 1.5rem 0rem;
     }
 }
