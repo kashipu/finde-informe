@@ -1,0 +1,21 @@
+.mapa-colombia {
+    .mapa-svg {
+        border: 1px solid red;
+        width: 100%;
+        height: 700px;
+    }
+    path {
+        fill: #fff;
+        stroke: #2566af;
+    }
+    .color-dep {
+        fill: #72aef2;
+        cursor: pointer;
+        &:hover {
+            fill: #2566af;
+        }
+    }
+    .dep-active {
+        fill: #2566af;
+    }
+}

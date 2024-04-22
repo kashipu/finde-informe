@@ -43,37 +43,12 @@ block content
             .financiacion-proyectos-container
                 .financiacion-proyectos-box.wrapper
                     .proyectos-mapa
-                        img(src="./images/financiacion-mapa.svg", alt="")
+                        .mapa-colombia
+                            include ../components/mapa-colombia.pug
                     .proyectos-slider
-                        .proyectos-slider-container
-                            .proyectos-slider-box
-                                .proyectos-slider-item
-                                    .proyectos-slider-item-title
-                                        h3 Antioquia
-                                    .proyectos-slider-item-content
-                                        .proyectos-slider-item-text
-                                            p Financiación del Plan de Desarrollo 2020 - 2023
-                                                br
-                                            | por COP 149.185 millones.
-                                        .proyectos-slider-item-image
-                                            img(src='./images/mapa-slider-photo1.jpg', alt='')
-                                .proyectos-slider-item
-                                    .proyectos-slider-item-title
-                                        h3 Itagüí (Antioquia)
-                                    .proyectos-slider-item-content
-                                        .proyectos-slider-item-text
-                                            p financiación del Plan de Desarrollo 2020 - 2023
-                                                br
-                                            | por COP73.963 millones.
-                                        .proyectos-slider-item-image
-                                            img(src='./images/mapa-slider-photo2.jpeg', alt='')
-                                .proyectos-slider-item
-                                    .proyectos-slider-item-title
-                                        h3 Bolívar
-                                    .proyectos-slider-item-content
-                                        .proyectos-slider-item-text
-                                            p Financiación del Plan de Desarrollo 2020 - 2023
-                                        .proyectos-slider-item-image
-                                            lite-youtube(videoid="uuHWrOOUAKI")
+                        include ../components/proyectos-slider-item.pug
+                    .proyectos-buttons
+                        p hola mundo
 block scripts
     script activeLink(5,13)
+    script(src="./js/mapa-data.js")

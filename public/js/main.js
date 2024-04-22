@@ -143,40 +143,9 @@ $('.cards-container-slick').slick({
       }
     ]
   });
-  $('.proyectos-slider-box').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
-
 
   const mainNav = document.querySelectorAll(".nav-item")
   const subNav = document.querySelectorAll(".nav-item-dropdown")
-
-  console.log(mainNav)
-  console.log(subNav)
-
   const activeLink = (main, sub) => {
       mainNav[main].classList.add("item-active")
       subNav[sub].classList.add("item-dropdown-active")

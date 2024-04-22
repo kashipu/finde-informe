@@ -1,7 +1,7 @@
 function mostrarCifras(selectorCards, selectorCifras, activeClass) {
   const cards = document.querySelectorAll(selectorCards);
   const cifras = document.querySelectorAll(selectorCifras);
-  const scrollAmount = 400;
+  const scrollAmount = 600;
   let scrollDone = false;
   cards[0].classList.add(activeClass)
   cards.forEach((card, index) => {

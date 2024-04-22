@@ -1651,14 +1651,24 @@ table {
   width: 100%;
 }
 
+.proyectos-slider {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
 .proyectos-slider-container {
   padding: 2rem;
 }
 
 .proyectos-slider-item {
-  max-width: 500px;
+  width: 100%;
   background-color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
+  display: none;
+}
+.proyectos-slider-item:first-child {
+  display: block;
 }
 
 .proyectos-slider-item-content {
@@ -1667,7 +1677,7 @@ table {
 
 .proyectos-slider-item-title {
   background-color: #00acec;
-  border-radius: 2rem 2rem 0rem 0rem;
+  border-radius: 1rem 1rem 0rem 0rem;
   padding: 1rem;
   text-align: center;
   font-weight: 600;
@@ -1680,27 +1690,28 @@ table {
 .proyectos-slider-item-text {
   color: #2566af;
   font-size: 1.2rem;
-  text-align: center;
   line-height: 1.5;
   padding: 1rem;
+  text-align: center;
+}
+.proyectos-slider-item-text p {
+  margin-bottom: 0.5rem;
+}
+.proyectos-slider-item-text span {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .proyectos-slider-item-image img {
-  max-width: 450px;
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   display: flex;
 }
 
-.proyectos-slider-box .slick-slide {
-  display: flex;
-  justify-content: center;
-}
-.proyectos-slider-box .slick-prev:before,
-.proyectos-slider-box .slick-next:before {
-  color: #2566af;
-  font-size: 24px;
+.proyectos-slider-box {
+  border: 1px solid red;
 }
 
 @media (max-width: 1200px) {
@@ -1747,6 +1758,11 @@ table {
   .slick-next:before {
     color: #2566af;
     font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .proyectos-slider-item-title h3 {
+    font-size: 1.5rem;
   }
 }
 .header-top__ribbon {
@@ -3525,4 +3541,23 @@ header {
   .productos-line-item:nth-child(even) .producto-item-text, .productos-line-item:nth-child(even) .producto-item-title {
     text-align: left;
   }
+}
+.mapa-colombia .mapa-svg {
+  border: 1px solid red;
+  width: 100%;
+  height: 700px;
+}
+.mapa-colombia path {
+  fill: #fff;
+  stroke: #2566af;
+}
+.mapa-colombia .color-dep {
+  fill: #72aef2;
+  cursor: pointer;
+}
+.mapa-colombia .color-dep:hover {
+  fill: #2566af;
+}
+.mapa-colombia .dep-active {
+  fill: #2566af;
 }
