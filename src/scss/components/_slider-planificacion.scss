@@ -15,7 +15,10 @@
     padding: 2rem;
 }
 .slider-item {
+    display: flex!important;
+    justify-content: center;
     img {
+        max-width: 600px;
         width: 100%;
         object-fit: cover;
         aspect-ratio: 4/4;
@@ -47,8 +50,20 @@
     }
 }
 @media(min-width:1201px) {}
-@media(max-width:900px) {}
-@media(max-width:900px) {}
+@media(max-width:1200px) {
+    .slider-planificacion {
+        max-height: 100%;
+    }
+    .slider-planificacion-text {
+        padding: 0rem 3rem;
+        padding-bottom: 3rem;
+    }
+    .slider-wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        max-width: 95vw;
+    }
+}
 @media(max-width:500px) {
     .slider-planificacion {
         max-height: 100%;

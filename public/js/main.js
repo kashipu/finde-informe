@@ -2,10 +2,22 @@
 const navBurguerButton = document.querySelector(".nav-burguer")
 const navDropdownMenu = document.querySelector(".nav-container-main")
 const mainContainer = document.querySelector(".main-container")
+const upbutton = document.querySelector("#up-button")
+console.log(upbutton)
+
+
+upbutton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+})
 
 navBurguerButton.addEventListener("click", () => {
   navDropdownMenu.classList.toggle("d-none")
   mainContainer.classList.toggle("d-none")
+
+
 })
 
 $('.cards-container-slick').slick({

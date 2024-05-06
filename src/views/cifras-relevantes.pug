@@ -29,25 +29,25 @@ block content
                     +cifras('90%', 'Categorías  3, 4, 5 y 6')
             .cifras-item
                 .cifras-container.wrapper-intern
-                    +cifras('884', 'Proyectos gestionados')
+                    +cifras('844', 'Proyectos gestionados')
                     +cifras('$ 6,77', 'Billones')
-                    +cifras('534', 'proyectos en ejecución y terminados')
-                    +cifras('310', 'proyectos por iniciar')
+                    +cifras('534', 'Proyectos en ejecución y terminados')
+                    +cifras('310', 'Proyectos por iniciar')
             .cifras-item
                 .cifras-container.wrapper-intern
                     +cifras('2', 'Proyectos <br> ejecutados')
-                    +cifras('PBOT', 'San sebastián de mariquita')
-                    +cifras('PDA', 'Cartago')
+                    +cifras('PBOT <br><small>(Plan Básico de Ordenamiento Territorial)</small>', 'San Sebastián de Mariquita')
+                    +cifras('PDA <br><small> (Plan de Acción)</small>', 'Cartago')
         .page-cards-icons
             .cards-dos-container.wrapper
                 +card-dos("Ebitda", "./images/cifras-icon1.svg")
                 +card-dos("Utilidad neta", "./images/cifras-icon2.svg")
                 +card-dos("Rentabilidad financiera", "./images/cifras-icon3.svg")
                 +card-dos("Ingresos no financieros", "./images/cifras-icon4.svg")
-                +card-dos("Sello buenas practicas de innovación", "./images/cifras-icon5.svg")
+                +card-dos("Certificaciones de innovación", "./images/cifras-icon5.svg")
                 +card-dos("En convocatorias de asistencia técnica", "./images/cifras-icon6.svg")
                 +card-dos("Política contratación economía solidaria", "./images/cifras-icon7.svg")
-                +card-dos("Economía popular <br> <span>(Artesanías de Colombia y wayuú)</span>", "./images/cifras-icon8.svg")
+                +card-dos("Economía popular", "./images/cifras-icon8.svg")
                 +card-dos("Índice de Cultura de Felicidad", "./images/cifras-icon9.svg")
                 +card-dos("Empresa familiarmente responsable", "./images/cifras-icon10.svg")
         .page-cards-content
@@ -56,12 +56,12 @@ block content
                 +cifra-icon("./images/cifras-icon2.svg", "<span>$ 165.937</span><br> millones")
                 +cifra-icon("./images/cifras-icon3.svg", "<span>$ 10,63%</span>")
                 +cifra-icon("./images/cifras-icon4.svg", "<span>$ 64.051</span><br> millones")
-                +cifra-icon("./images/cifras-icon5.svg", "<span>ISO 9001:2015</span><br><span>ISO 14001:2015</span>")
+                +cifra-icon("./images/cifras-icon5.svg", "<span>ISO 9001:2015</span><br><span>ISO 14001:2015</span><br><span>ISO 27001:2013</span><br><span>Sello BPI basado en NTC:5801</span>")(class="economia-certificaciones")
                 +cifra-icon("./images/cifras-icon6.svg", "<span>$ 1</span><br>billón")
                 +cifra-icon("./images/cifras-icon7.svg", "<span>Nueva</span><br>Política contratación <br>economía solidaria")
-                +cifra-icon("./images/cifras-icon8.svg", "<span>7 proyectos</span><br>Economía popular<br> (Artesanías de Colombia y wayuú)")
+                +cifra-icon("./images/cifras-icon8.svg", "Suscripción de 5 contratos interadministrativos con Artesanías de Colombia, Ministerio de Agricultura, Ministerio de Vivienda y Ministerio del Interior. <br><br> ​Suscripción de 7 convenios solidarios con Juntas de Acción Comunal para los proyectos de Artesanías de Colombia y con la comunidad Wayuu.​​")(class="economia-texto")
                 +cifra-icon("./images/cifras-icon9.svg", "<span>83,3%</span><br>Índice de <br>Cultura de Felicidad")
-                +cifra-icon("./images/cifras-icon10.svg","<span>EFR</span><br>Empresa familiarmente <br>responsable")
+                +cifra-icon("./images/cifras-icon10.svg","<span>efr</span><br>Empresa familiarmente <br>responsable")
 block scripts
     script mostrarCifras('.card-uno', '.cifras-item', 'card-uno-active');
         | mostrarCifras('.card-dos', '.cifra-space-box', 'card-dos-active');

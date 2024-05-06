@@ -22,13 +22,3 @@ function mostrarCifras(selectorCards, selectorCifras, activeClass) {
     })
   });
 }
-
-/* document.addEventListener('DOMContentLoaded', function() {
-  mostrarCifras('.card-uno', '.cifras-item', "card-uno-active");
-  mostrarCifras('.card-dos', '.cifra-space-box', "active");
-  mostrarCifras('.card-uno', '.texto-box', "active");
-  mostrarCifras('.ambiental-button', '.slide-content', "active");
-  mostrarCifras('.card-uno', '.finanzas-slider-item', "active");
-  mostrarCifras('.slider-asistencia-item', '.asistencia-textimage-box', "active");
-});
- */
