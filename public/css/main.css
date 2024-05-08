@@ -86,6 +86,12 @@ table {
   margin-top: 5rem;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: #2566af;
+  font-size: 24px;
+}
+
 .global-title {
   padding: 0rem 1.2rem;
 }
@@ -515,12 +521,9 @@ table {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  padding: 2rem;
 }
 .section-calificaciones-texto .texto-box {
-  max-width: 38vw;
   text-rendering: optimizeLegibility;
-  margin: 2.5rem;
 }
 .section-calificaciones-texto .texto-box h2 {
   font-weight: 500;
@@ -529,24 +532,23 @@ table {
   margin-bottom: 2rem;
   color: var(--color-secondary);
 }
-.section-calificaciones-texto .texto-box p {
+
+.content-text {
+  max-width: 35vw;
+  margin: 0 auto;
+  padding: 5rem 0rem;
+}
+.content-text p {
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 1.5;
-  margin-bottom: 1.2rem;
 }
 
 @media (max-width: 1200px) {
-  .section-calificaciones-cards {
-    align-items: center;
-    margin-top: 1rem;
-  }
-  .section-calificaciones-texto {
-    padding: 0;
-  }
-  .section-calificaciones-texto .texto-box {
-    max-width: 90vw;
-    margin: 2rem;
+  .content-text {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 2rem 0rem;
   }
 }
 @media (max-width: 500px) {
@@ -1780,11 +1782,6 @@ table {
     display: grid;
     grid-template-columns: 100%;
   }
-  .slick-prev:before,
-  .slick-next:before {
-    color: #2566af;
-    font-size: 20px;
-  }
 }
 @media (max-width: 500px) {
   .proyectos-buttons {
@@ -2914,8 +2911,12 @@ header {
 .section-number {
   font-size: 3rem;
   font-weight: 600;
-  line-height: 0.8;
   color: white;
+}
+.section-number p {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .section-banner-photo {

@@ -23,8 +23,12 @@
 .section-number {
     font-size: 3rem;
     font-weight: 600;
-    line-height: .8;
     color: white;
+    p {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1;
+    }
 }
 .section-banner-photo {
     display: flex;

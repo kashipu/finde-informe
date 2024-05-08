@@ -6,22 +6,25 @@ block content
     include ../components/header.pug
     main.main-container
         .global-container
-            .global-box.wrapper
+            .global-box
                 .global-title
                     h1 Calificaciones
                 .section-calificaciones-cards
                     +card-uno("Modelo Integrado de Planeación y Gestión (MIPG)", "./images/califica-icon1.svg")
                     +card-uno("Índice de transparencia y acceso a la información (ITA)", "./images/califica-icon2.svg")
                 .section-calificaciones-texto
-                    .texto-box.wrapper-intern
-                        h2 Modelo Integrado de Planeación y Gestión (MIPG)
-                        p Findeter ha trabajado en la implementación y fortalecimiento del MIPG, que es un marco de referencia para dirigir, planear, ejecutar, hacer seguimiento, evaluar y controlar la gestión institucional de las entidades públicas en términos de calidad e integridad del servicio, con el fin de que se entreguen resultados que atiendan y resuelvan las necesidades y problemas de los grupos de valor.
-                        p El grado de implementación del MIPG es medido anualmente a través del Formulario Único de Reporte de Avances de la Gestión (FURAG), por parte del Departamento Administrativo de la Función Pública (DAFP), cuyo resultado es el índice de desempeño institucional (IDI), que mide la capacidad de las entidades y organismos públicos para orientar sus procesos de gestión institucional hacia una mejor producción de bienes y prestación de servicios, con criterios de calidad, atendiendo las necesidades de la ciudadanía, y en el marco de la legalidad, la eficiencia y la transparencia.
-                        p En Findeter, para la vigencia 2022, medida en el 2023, obtuvimos una calificación de 85,7 puntos, según la última medición realizada por el Departamento Administrativo de la Función Pública a través del FURAG.
-                    .texto-box.wrapper-intern
-                        h2 Índice de transparencia y acceso a la información (ITA)
-                        p En cumplimiento de la Ley de Transparencia y del Derecho de Acceso a la Información Pública, la Procuraduría General de la Nación asumió la competencia de hacer el seguimiento de la implementación de esta norma en las entidades públicas. Esta autoevaluación es auditada por la Procuraduría, que emite un dictamen final del estado de cumplimiento de la ley, informando los aspectos que deben ser ajustados por las entidades, y asignando una calificación sobre 100 puntos. Para la vigencia 2023 registramos una calificación de 100/100 en el cumplimiento de la Ley de Transparencia y del Derecho de Acceso a la Información Pública.
-        include ../components/calificaciones-banner.pug
+                    .texto-box
+                        .content-text
+                            h2 Modelo Integrado de Planeación y Gestión (MIPG)
+                            p Findeter ha trabajado en la implementación y fortalecimiento del MIPG, que es un marco de referencia para dirigir, planear, ejecutar, hacer seguimiento, evaluar y controlar la gestión institucional de las entidades públicas en términos de calidad e integridad del servicio, con el fin de que se entreguen resultados que atiendan y resuelvan las necesidades y problemas de los grupos de valor.
+                            p El grado de implementación del MIPG es medido anualmente a través del Formulario Único de Reporte de Avances de la Gestión (FURAG), por parte del Departamento Administrativo de la Función Pública (DAFP), cuyo resultado es el índice de desempeño institucional (IDI), que mide la capacidad de las entidades y organismos públicos para orientar sus procesos de gestión institucional hacia una mejor producción de bienes y prestación de servicios, con criterios de calidad, atendiendo las necesidades de la ciudadanía, y en el marco de la legalidad, la eficiencia y la transparencia.
+                            p En Findeter, para la vigencia 2022, medida en el 2023, obtuvimos una calificación de 85,7 puntos, según la última medición realizada por el Departamento Administrativo de la Función Pública a través del FURAG.
+                        include ../components/calificaciones-banner.pug
+                    .texto-box
+                        .content-text
+                            h2 Índice de transparencia y acceso a la información (ITA)
+                            p En cumplimiento de la Ley de Transparencia y del Derecho de Acceso a la Información Pública, la Procuraduría General de la Nación asumió la competencia de hacer el seguimiento de la implementación de esta norma en las entidades públicas. Esta autoevaluación es auditada por la Procuraduría, que emite un dictamen final del estado de cumplimiento de la ley, informando los aspectos que deben ser ajustados por las entidades, y asignando una calificación sobre 100 puntos. Para la vigencia 2023 registramos una calificación de 100/100 en el cumplimiento de la Ley de Transparencia y del Derecho de Acceso a la Información Pública.
+                        include ../components/calificaciones-banner2.pug
 block scripts
     script mostrarCifras('.card-uno', '.texto-box', 'card-uno-active');
         | activeLink(3,3)

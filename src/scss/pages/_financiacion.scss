@@ -211,11 +211,6 @@
         display: grid;
         grid-template-columns: 100%;
     }
-    .slick-prev:before,
-    .slick-next:before {
-        color: #2566af;
-        font-size: 20px;
-    }
 }
 @media(max-width: 500px) {
     .proyectos-buttons {
