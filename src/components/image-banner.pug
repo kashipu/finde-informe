@@ -4,6 +4,6 @@ mixin image-banner(text, image, textbtn, linkbtn, viewButton)
             .video-text
                 p&attributes(attributes)=text
                 if viewButton
-                    a(href=linkbtn target="_blank")=textbtn
+                    a(href=linkbtn)=textbtn
             .video-embed
                 img(src=image, alt="")
